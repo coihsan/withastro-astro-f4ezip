@@ -39,16 +39,15 @@
 *{
 	scroll-behavior: smooth;
 }
+
 body {
 	font-family: 'Atkinson', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
 }
@@ -162,3 +161,11 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+@media (prefers-color-scheme: dark) {
+	/* Dark Mode Utilities */
+	.dark-mode {
+	  /* Sesuaikan properti CSS untuk dark mode di sini */
+	  background-color: #1a202c;
+	  color: #ffffff;
+	}
+  }
