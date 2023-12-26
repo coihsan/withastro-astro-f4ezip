@@ -25,6 +25,9 @@
 	font-style: normal;
 	font-display: swap;
 }
+*{
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Atkinson', sans-serif;
 	margin: 0;
