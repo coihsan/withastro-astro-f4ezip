@@ -3,7 +3,7 @@ title: 'RIP Similar Audiences: Why Google Pulled the Plug and What You Can Do No
 description: 'Google has pulled the plug on this once-powerful tool. But why did they do it, and what does it mean for your ad campaigns?'
 pubDate: 'Jul 08 2022'
 heroImage: 
-    url: '/blog-placeholder-3.jpg'
+    src: '/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
 ---
 

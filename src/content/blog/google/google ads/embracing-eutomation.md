@@ -3,7 +3,7 @@ title: 'Embrace the Rise of the Machines: Embracing Automation in Google Ads'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2023'
 heroImage: 
-    url: '/blog-placeholder-3.jpg'
+    src: '/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
 # tags: ["astro", "learning in public", "setbacks", "community"]
 ---

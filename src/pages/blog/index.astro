@@ -57,10 +57,6 @@ const posts = (await getCollection('blog')).sort(
 				color: rgb(var(--black));
 				line-height: 1;
 			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
 			ul li a:hover h4,
 			ul li a:hover .date {
 				color: rgb(var(--accent));
@@ -85,20 +81,22 @@ const posts = (await getCollection('blog')).sort(
 			}
 		</style>
 	</head>
-	<body>
+	<body class="bg-onyx-50 dark:bg-onyx-950 text-onyx-900 dark:text-onyx-50">
 		<Header />
 		<main>
 			<section>
 				<ul>
 					{
 						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
+							<li class="border dark:border-onyx-700 border-onyx-400 rounded-lg">
+								<a class="relative" href={`/blog/${post.slug}/`}>
+									<img width={720} height={360} src={post.data.heroImage.src} alt={post.data.heroImage.alt} />
+									<div class="p-5">
+										<h4 class="title">{post.data.title}</h4>
+										<p class="text-[14px] text-onyx-900 dark:text-onyx-500">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
+									</div>
 								</a>
 							</li>
 						))
