@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 ---
 
 <!doctype html>
@@ -13,12 +13,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body class="bg-onyx-50 dark:bg-black text-onyx-900 dark:text-onyx-50">
 		<Header title={SITE_TITLE} />
 		<main>
-			<div class="flex items-center justify-between w-full ">
+			<div class="flex items-center justify-between w-full max-sm:flex-col-reverse">
 				<div class="flex flex-col gap-5">
-					<h1 class="text-7xl font-bold text-lime-400">Obey your Grandad!</h1>
-					<h3 class="text-3xl leading-none">I have a lot of documentation of my learning on the internet.</h3>
+					<h1 class="text-6xl font-bold  max-sm:text-4xl">Digital Marketing Tips from a Wise Old Man, <span class="text-lime-400">Because Grandpa Knows Best!</span></h1>
+					<h3 class="text-2xl leading-none">If you want to learn digital marketing the right way, listen to your grandpa. He's been in the game for years and knows what he's talking about.</h3>
 				</div>
-				<img class="max-w-[600px]" src="/avatar.webp" alt="avatar">
+				<img class="max-w-[600px]  max-sm:w-full" src="/avatar.webp" alt="avatar">
+			</div>
+			<div>
+				<h1 class="max-sm:text-4xl">Choose the platform you want to learn about</h1>
+				<div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
+					{cardplatforms.map((list) =>(
+						<a class="p-5 border rounded-lg" href={list.path}>
+							<span>{list.icon}</span>
+							<h1>{list.title}</h1>
+						</>
+					))}
+				</div>
 			</div>
 		</main>
 		<Footer />
