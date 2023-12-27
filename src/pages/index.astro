@@ -10,7 +10,7 @@ import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-onyx-50 dark:bg-black text-onyx-900 dark:text-onyx-50">
+	<body class="">
 		<Header title={SITE_TITLE} />
 		<main>
 			<div class="flex items-center justify-between w-full max-sm:flex-col-reverse">
@@ -18,15 +18,16 @@ import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 					<h1 class="text-6xl font-bold  max-sm:text-4xl">Digital Marketing Tips from a Wise Old Man, <span class="text-lime-400">Because Grandpa Knows Best!</span></h1>
 					<h3 class="text-2xl leading-none">If you want to learn digital marketing the right way, <span class="text-lime-400 underline">obey your grandpa</span>. He's been in the game for years and knows what he's talking about.</h3>
 				</div>
-				<img class="max-w-[600px]  max-sm:w-full" src="/avatar.webp" alt="avatar">
+				<img class="max-w-[600px] max-sm:w-full" src="/avatar.webp" alt="avatar">
 			</div>
 			<div>
 				<h1 class="max-sm:text-4xl">Choose the platform you want to learn about</h1>
 				<div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
 					{cardplatforms.map((list) =>(
 						<a class="p-5 border rounded-lg" href={list.path}>
-							<span>{list.icon}</span>
-							<h1>{list.title}</h1>
+							<div>{list.iconSVG}</div>
+							<h1 class="text-4xl">{list.title}</h1>
+							<p>{list.description}</p>
 						</>
 					))}
 				</div>
