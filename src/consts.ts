@@ -1,50 +1,71 @@
 
 export const SITE_TITLE = 'Grandpa';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
+import { any } from "astro/zod";
 import { Icons } from "./constants/Icons";
 
-export const cardplatforms = [
+export const cardplatforms : {
+    key: number;
+    title: string;
+    description: string;
+    path: string;
+    iconSVG: any;
+    categories: {
+        tag: string;
+        url: string;
+    }[];
+} []{} = [
     {
         key: 0,
         title: "Google",
-        description: "Learn how to use google ads",
+        description: "The world's most popular search engine is a powerful tool for finding information, but it can be overwhelming. Let me teach you how to use Google to your advantage.",
         path: "/",
-        iconSVG: Icons.google
+        iconSVG: ${Icons.google},
+        categories: [
+            {
+                tag: "Google Algorithm",
+                url: "string",
+            },
+            {
+                tag: "Google Ads",
+                url: "string",
+            }
+        ];
     },
     {
         key: 1,
         title: "Meta",
-        description: "Learn how to use google ads",
+        description: "Meta is the parent company of Facebook, Instagram, and WhatsApp. I'll show you how to use these platforms to connect with friends and family, build your brand, and grow your business.",
         path: "/",
-        iconSVG: Icons.meta
+        iconSVG: ${Icons.meta},
     },
     {
         key: 2,
         title: "Instagram",
-        description: "Learn how to use google ads",
+        description: "Instagram is a visual social media platform that's perfect for sharing photos and videos. I'll teach you how to create stunning content that will get you noticed.",
         path: "/",
-        iconSVG: Icons.instagram,
+        iconSVG: ${Icons.instagram}
     },
     {
         key: 3,
         title: "X/Twiiter",
-        description: "Learn how to use google ads",
+        description: "Twitter is a microblogging platform that's perfect for sharing news, updates, and thoughts. I'll teach you how to use Twitter to connect with your audience and build relationships.",
         path: "/",
-        iconSVG: Icons.twitter
+        iconSVG: ${Icons.twitter}
     },
     {
         key: 4,
         title: "TikTok",
-        description: "Learn how to use google ads",
+        description: "TikTok is a short-form video platform that's perfect for sharing funny, creative, and informative content. I'll teach you how to use TikTok to entertain your audience and grow your following.",
         path: "/",
-        iconSVG: Icons.tiktok
+        iconSVG: ${Icons.tiktok}
     },
     {
         key: 5,
         title: "Youtube",
-        description: "Learn how to use google ads",
+        description: "YouTube is the world's largest video-sharing platform. I'll teach you how to create videos that are engaging, informative, and entertaining",
         path: "/",
-        iconSVG: Icons.tiktok
+        iconSVG: ${Icons.youtube}
     },
 ];
 
