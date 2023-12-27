@@ -7,10 +7,10 @@ const blog = defineCollection({
 		description: z.string(),
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
-		heroImage: z.object({ // Indentation corrected
-            src: z.string().optional(),
-            alt: z.string().optional(),
-        }),
+		heroImage: z.object({ 
+            src: z.string().optional().default(''),
+            alt: z.string().optional().default(''),
+        }).optional(),
 	}),
 });
 

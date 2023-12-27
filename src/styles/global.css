@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root[data-theme="light"] {
 	--accent: #2337ff;
@@ -164,7 +166,6 @@ hr {
 @media (prefers-color-scheme: dark) {
 	/* Dark Mode Utilities */
 	.dark-mode {
-	  /* Sesuaikan properti CSS untuk dark mode di sini */
 	  background-color: #1a202c;
 	  color: #ffffff;
 	}
