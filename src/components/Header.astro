@@ -12,11 +12,12 @@ import SearchBar from './UI/SearchBar.astro';
 		<div class="flex items-center">
 			<a class="flex items-center" href="/">
 				<img class="w-[40px] h-[40px] rounded-full" src="/1703176079675.webp" alt="logo">
-				<h2 class="pl-3 font-bold text-2xl text-lime-400">Mr.Phony</h2>
+				<span class="pl-3 font-bold text-2xl text-lime-400 leading-none">Obey</span>
 			</a>
 			<div class="internal-links ml-4 max-sm:absolute max-sm:flex max-sm:flex-col">
 				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="/blog">Blog</HeaderLink>
+				<HeaderLink href="/blog">Index</HeaderLink>
+				<HeaderLink href="/roadmap">Roadmap</HeaderLink>
 				<HeaderLink href="/about">About</HeaderLink>
 				<HeaderLink href="/buymeacoffee">Buy me a coffee!</HeaderLink>
 			</div>
@@ -33,10 +34,6 @@ import SearchBar from './UI/SearchBar.astro';
 		margin: 0;
 		padding: 0 2em;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
 	}
 
 	h2 a,
