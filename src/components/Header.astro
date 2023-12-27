@@ -2,18 +2,19 @@
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 import DarkMode from './UI/DarkMode.astro';
+import Hamburger from './UI/Hamburger.astro';
 import ThemeIcon from './UI/ThemeIcon.astro';
 import SearchBar from './UI/SearchBar.astro';
 ---
 
-<header class="bg-zinc-200 dark:bg-zinc-800 text-onyx-900 dark:text-onyx-50">
-	<nav>
+<header class="bg-zinc-200 dark:bg-onyx-800 text-onyx-900 dark:text-onyx-50">
+	<nav class="relative">
 		<div class="flex items-center">
 			<a class="flex items-center" href="/">
 				<img class="w-[40px] h-[40px] rounded-full" src="/1703176079675.webp" alt="logo">
-				<h2 class="pl-3 font-bold text-2xl">Mr.Phony</h2>
+				<h2 class="pl-3 font-bold text-2xl text-lime-400">Mr.Phony</h2>
 			</a>
-			<div class="internal-links ml-4">
+			<div class="internal-links ml-4 max-sm:absolute max-sm:flex max-sm:flex-col">
 				<HeaderLink href="/">Home</HeaderLink>
 				<HeaderLink href="/blog">Blog</HeaderLink>
 				<HeaderLink href="/about">About</HeaderLink>
@@ -23,6 +24,7 @@ import SearchBar from './UI/SearchBar.astro';
 		<div class="flex gap-3">
 			<SearchBar />
 			<ThemeIcon />
+			<Hamburger />
 		</div>
 	</nav>
 </header>
@@ -54,7 +56,7 @@ import SearchBar from './UI/SearchBar.astro';
 	}
 	nav a.active {
 		text-decoration: none;
-		border-bottom-color: var(--accent);
+		color: #a3e635;
 	}
 	.social-links,
 	.social-links a {
