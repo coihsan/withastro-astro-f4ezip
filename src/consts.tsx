@@ -153,7 +153,7 @@ export const cardplatforms: CardPlatform[] = [
     {
         key: 5,
         title: "Youtube",
-        description: "YouTube is the world's largest video-sharing platform. I'll teach you how to create videos that are engaging, informative, and entertaining",
+        description: "YouTube is the world's largest video-sharing platform. I'll teach you how to create impactful campaign videos, monotize, and everything else you need to know on this platform.",
         path: "/",
         iconSVG: Icons.youtube,
         categories: [
