@@ -33,6 +33,7 @@ export interface CardPlatform {
     path: string;
     iconSVG: JSX.Element;
     categories: Category[];
+    available: boolean;
 }
 export const cardplatforms: CardPlatform[] = [
     {
@@ -51,6 +52,7 @@ export const cardplatforms: CardPlatform[] = [
                 url: "string",
             }
         ],
+        available: true,
     },
     {
         key: 1,
@@ -66,8 +68,29 @@ export const cardplatforms: CardPlatform[] = [
             {
                 tag: "Google Ads",
                 url: "string",
-            }
+            },
+            {
+                tag: "Google Analytics",
+                url: "string",
+            },
+            {
+                tag: "Google Business Profile",
+                url: "string",
+            },
+            {
+                tag: "Google Search Console",
+                url: "string",
+            },
+            {
+                tag: "Google Tag Manager",
+                url: "string",
+            },
+            {
+                tag: "Google Search Console",
+                url: "string",
+            },
         ],
+        available: true
     },
     {
         key: 2,
@@ -77,14 +100,19 @@ export const cardplatforms: CardPlatform[] = [
         iconSVG: Icons.instagram,
         categories: [
             {
-                tag: "Google Algorithm",
+                tag: "Awareness",
                 url: "string",
             },
             {
-                tag: "Google Ads",
+                tag: "Lead Generation",
+                url: "string",
+            },
+            {
+                tag: "Shop",
                 url: "string",
             }
         ],
+        available: true
     },
     {
         key: 3,
@@ -102,6 +130,7 @@ export const cardplatforms: CardPlatform[] = [
                 url: "string",
             }
         ],
+        available: true
     },
     {
         key: 4,
@@ -119,6 +148,7 @@ export const cardplatforms: CardPlatform[] = [
                 url: "string",
             }
         ],
+        available: true
     },
     {
         key: 5,
@@ -136,6 +166,7 @@ export const cardplatforms: CardPlatform[] = [
                 url: "string",
             }
         ],
+        available: true
     },
 ];
 

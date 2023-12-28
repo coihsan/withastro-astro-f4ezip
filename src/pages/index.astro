@@ -14,8 +14,8 @@ import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 		<Header title={SITE_TITLE} />
 		<main>
 			<div class="mt-12 flex items-center justify-between w-full max-sm:flex-col-reverse">
-				<div class="flex flex-col *:max-sm:text-center">
-					<div class="text-2xl max-sm:text-[16px] px-3 py-2 rounded-full border border-lime-400 w-max max-sm:mx-auto flex items-center vertical-baseline leading-none"><span>Hi Grandkids, I'm your Grandpa!</span></div>
+				<div class="grid *:max-sm:text-center">
+					<div class="whitespace-nowrap max-sm:text-[16px] px-3 py-2 rounded-full border border-lime-400 w-max max-sm:mx-auto block align-baseline leading-none">Hi Grandkids, I'm your Grandpa!</div>
 					<h1 class="text-[3.1rem] font-bold  max-sm:text-3xl leading-none pt-[2rem] pb-[1rem]">I'll teach you digital marketing best practices that are easy to implement in your work, <span class="text-lime-400">because Grandpa Knows Best!</span></h1>
 					<h3 class="text-2xl text-zinc-400 leading-none">If you want to learn digital marketing the right way, <span class="text-lime-400 underline">obey your grandpa</span>. I've been in the game for years and know what I'm talking about.</h3>
 				</div>
@@ -25,7 +25,7 @@ import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 				<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">Choose the platform you want to learn about</h1>
 				<div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
 					{cardplatforms.map((list) =>(
-						<div class="p-5 border border-onyx-100 rounded-lg hover:border-lime-400 transition-all ease-linear duration-500 flex flex-col justify-center">
+						<div class={({ class:list="" }) => (isActive ? "border-blue-500" : "border-gray-500")}>
 							<span>{list.iconSVG}</span>
 							<h1 class="text-4xl text-lime-400">{list.title}</h1>
 							<h3 class="text-[1rem] max-sm:text-[14px] text-zinc-400 font-normal py-4">{list.description}</h3>
