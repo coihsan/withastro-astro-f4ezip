@@ -1,11 +1,13 @@
+import type { ReactElement } from "react";
+
 interface typeIcons {
         key: number;
-        google: JSX.Element;
-        meta: JSX.Element;
-        instagram: JSX.Element;
-        twitter: JSX.Element;
-        tiktok: JSX.Element;
-        youtube: JSX.Element;
+        google: ReactElement;
+        meta: ReactElement;
+        instagram:ReactElement;
+        twitter:ReactElement;
+        tiktok:ReactElement;
+        youtube:ReactElement;
 }
 export const Icons: typeIcons = {
 
