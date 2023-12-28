@@ -25,11 +25,15 @@ import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 				<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">Choose the platform you want to learn about</h1>
 				<div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
 					{cardplatforms.map((list) =>(
-						<div class="p-5 rounded-lg border border-zinc-700 hover:border-lime-400 hover:transition-all ease-linear duration-500">
-							<img class="fill-white" src={list.iconSVG} alt="icons"/>
-							<h1 class="text-4xl text-lime-400">{list.title}</h1>
-							<h3 class="text-[1rem] max-sm:text-[14px] text-zinc-400 font-normal py-4">{list.description}</h3>
-							<a class={'flex items-center justify-center py-2 leading-none rounded-lg bg-lime-600 hover:bg-lime-400 transition-colors ease-linear duration-500'} href={list.path}>Get Started</a>
+						<div class="relative p-5 rounded-lg border border-zinc-700 hover:border-lime-400 hover:transition-all ease-linear duration-500">
+							<div class="absolute right-5 p-2 rounded-md bg-lime-950 ">
+								<img class="w-[25px] h-[25px] fill-lime-500" src={list.iconSVG} alt="icons"/>
+							</div>
+							<div class="mt-[1rem]">
+								<h1 class="text-4xl text-lime-400">{list.title}</h1>
+								<h3 class="text-[1rem] max-sm:text-[14px] text-zinc-400 font-normal py-4">{list.description}</h3>
+								<a class={'flex items-center justify-center py-2 leading-none rounded-lg bg-lime-600 hover:bg-lime-400 transition-colors ease-linear duration-500'} href={list.path}>Get Started</a>
+							</div>
 						</div>
 					))}
 				</div>
