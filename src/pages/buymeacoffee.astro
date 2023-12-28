@@ -3,7 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { Icons } from '../constants/Icons';
+import { IconsUI } from '../constants/Icons';
 
 ---
 
@@ -15,8 +15,8 @@ import { Icons } from '../constants/Icons';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>🧑 Buy Me a Coffee</h1>
-			<span>{Icons.google}</span>
+			<h1>🧑 Buy Me a Coffee ${IconsUI.calender}</h1>
+			<img src="/public/icons/google.svg" alt="">
 		</main>
 		<Footer />
 	</body>
