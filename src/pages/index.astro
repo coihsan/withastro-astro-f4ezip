@@ -25,11 +25,11 @@ import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 				<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">Choose the platform you want to learn about</h1>
 				<div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
 					{cardplatforms.map((list) =>(
-						<div class={({ class:list="" }) => (isActive ? "border-blue-500" : "border-gray-500")}>
+						<div class="p-5 rounded-lg border border-zinc-700 hover:border-lime-400 hover:transition-all ease-linear duration-500">
 							<span>{list.iconSVG}</span>
 							<h1 class="text-4xl text-lime-400">{list.title}</h1>
 							<h3 class="text-[1rem] max-sm:text-[14px] text-zinc-400 font-normal py-4">{list.description}</h3>
-							<a class="flex items-center justify-center py-2 leading-none rounded-lg bg-lime-600 hover:bg-lime-400 transition-colors ease-linear duration-500" href={list.path}>Get Started</a>
+							<a class={'flex items-center justify-center py-2 leading-none rounded-lg bg-lime-600 hover:bg-lime-400 transition-colors ease-linear duration-500'} href={list.path}>Get Started</a>
 						</div>
 					))}
 				</div>
