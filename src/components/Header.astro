@@ -8,7 +8,7 @@ import SearchBar from './UI/SearchBar.astro';
 ---
 
 <header class="fixed bg-onyx-900 w-full z-50">
-	<nav class="relative">
+	<nav class="relative flex items-center justify-between">
 		<div class="flex items-center">
 			<a class="flex items-center" href="/">
 				<img class="w-[40px] h-[40px] rounded-full" src="/logo.webp" alt="logo">
@@ -40,10 +40,8 @@ import SearchBar from './UI/SearchBar.astro';
 	h2 a.active {
 		text-decoration: none;
 	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+	nav a:hover{
+		color: #a3e635;
 	}
 	nav a {
 		padding: 1em 0.5em;
@@ -54,10 +52,6 @@ import SearchBar from './UI/SearchBar.astro';
 	nav a.active {
 		text-decoration: none;
 		color: #a3e635;
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
 	}
 	@media (max-width: 720px) {
 		.social-links {

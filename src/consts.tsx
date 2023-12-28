@@ -1,7 +1,6 @@
 
 export const SITE_TITLE = "I'm your Grandpa!";
 export const SITE_DESCRIPTION = 'Welcome to my website!';
-import { any } from "astro/zod";
 export interface typeIcons {
     key: number;
     google: JSX.Element;
@@ -31,7 +30,7 @@ export interface CardPlatform {
     title: string;
     description: string;
     path: string;
-    iconSVG: JSX.Element;
+    iconSVG?: JSX.Element;
     categories: Category[];
     available: boolean;
 }
