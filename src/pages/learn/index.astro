@@ -89,7 +89,7 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li class="border dark:border-onyx-700 border-onyx-400 rounded-lg">
 								<a class="relative" href={`/blog/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage?.src} alt={post.data.heroImage?.alt} />
+									<img width={720} height={360} src={post.data.heroImage.src} alt={post.data.heroImage.alt} />
 									<div class="p-5">
 										<h4 class="title">{post.data.title}</h4>
 										<p class="text-[14px] text-onyx-900 dark:text-onyx-500">

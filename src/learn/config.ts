@@ -1,17 +1,19 @@
-import { defineCollection, reference, z } from 'astro:content';
-
-const learn = defineCollection({
-	type: 'content',
-	schema: z.object({
-		title: z.string(),
-		description: z.string(),
-		pubDate: z.coerce.date(),
-		updatedDate: z.coerce.date().optional(),
-		heroImage: z.object({ 
-            src: z.string().optional().default(''),
-            alt: z.string().optional().default(''),
-        }).optional(),
-	}),
+import { z, defineCollection } from "astro:content";
+const learnCollection = defineCollection({
+    type: 'content',
+    schema: z.object({
+      title: z.string(),
+      pubDate: z.date(),
+      description: z.string(),
+      author: z.string(),
+      image: z.object({
+        url: z.string(),
+        alt: z.string()
+      }),
+      tags: z.array(z.string())
+    })
 });
-
-export const collections = { learn };
+// Export a single `collections` object to register your collection(s)
+export const collections = {
+  posts: learnCollection,
+};

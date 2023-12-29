@@ -46,24 +46,7 @@ export const cardplatforms: CardPlatform[] = [
         categories: [
             {
                 tag: "Google Algorithm",
-                url: "string",
-            },
-            {
-                tag: "Google Ads",
-                url: "string",
-            }
-        ],
-        available: true,
-    },
-    {
-        title: "Meta",
-        description: "Meta is the parent company of Facebook, Instagram, and WhatsApp. I'll show you how to use these platforms to connect with friends and family, build your brand, and grow your business.",
-        path: "/",
-        iconSVG: '/icons/meta.svg',
-        categories: [
-            {
-                tag: "Google Algorithm",
-                url: "string",
+                url: "/search",
             },
             {
                 tag: "Google Ads",
@@ -87,6 +70,27 @@ export const cardplatforms: CardPlatform[] = [
             },
             {
                 tag: "Google Search Console",
+                url: "string",
+            },
+        ],
+        available: true,
+    },
+    {
+        title: "Meta",
+        description: "Meta is the parent company of Facebook, Instagram, and WhatsApp. I'll show you how to use these platforms to connect with friends and family, build your brand, and grow your business.",
+        path: "/",
+        iconSVG: '/icons/meta.svg',
+        categories: [
+            {
+                tag: "Engagement Campaign",
+                url: "string",
+            },
+            {
+                tag: "Lead Generation",
+                url: "string",
+            },
+            {
+                tag: "Colaborative Marketplace",
                 url: "string",
             },
         ],
@@ -120,11 +124,11 @@ export const cardplatforms: CardPlatform[] = [
         iconSVG: '/icons/twitter.svg',
         categories: [
             {
-                tag: "Google Algorithm",
+                tag: "Promoted Ads",
                 url: "string",
             },
             {
-                tag: "Google Ads",
+                tag: "Engagements campaign",
                 url: "string",
             }
         ],
@@ -137,11 +141,11 @@ export const cardplatforms: CardPlatform[] = [
         iconSVG:'/icons/tiktok.svg',
         categories: [
             {
-                tag: "Google Algorithm",
+                tag: "Brand Awareness",
                 url: "string",
             },
             {
-                tag: "Google Ads",
+                tag: "Video Engagement",
                 url: "string",
             }
         ],
@@ -154,11 +158,11 @@ export const cardplatforms: CardPlatform[] = [
         iconSVG: '/icons/youtube.svg',
         categories: [
             {
-                tag: "Google Algorithm",
+                tag: "SEO for Youtube",
                 url: "string",
             },
             {
-                tag: "Google Ads",
+                tag: "Video Campaign",
                 url: "string",
             }
         ],
