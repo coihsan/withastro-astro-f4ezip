@@ -55,7 +55,6 @@ The blockquote element represents content that is quoted from another source, op
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 ```
-
 #### Output
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.  

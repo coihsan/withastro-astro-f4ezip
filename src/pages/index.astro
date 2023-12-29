@@ -21,11 +21,11 @@ import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 				</div>
 				<img class="max-w-[500px] max-sm:w-full" src="/avatar.webp" alt="avatar">
 			</div>
-			<div class="pt-[9rem] ">
+			<div class="mt-[9rem] p-9 rounded-lg bg-gradient-to-br from-zinc-950 to-zinc-900">
 				<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">Choose the platform you want to learn about</h1>
 				<div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
 					{cardplatforms.map((list) =>(
-						<a href={list.path} class="flex flex-col items-center justify-center relative p-5 rounded-lg border border-zinc-700 hover:border-lime-400 hover:transition-all ease-linear duration-500">
+						<a href={list.path} class="flex flex-col items-center justify-center relative p-5 bg-zinc-950 rounded-lg border border-zinc-700 hover:border-lime-400 hover:transition-all ease-linear duration-500">
 							<div class="right-5 p-2 rounded-md bg-lime-950 w-max">
 								<img class="w-[45px] h-[45px] fill-lime-500" src={list.iconSVG} alt="icons"/>
 							</div>
