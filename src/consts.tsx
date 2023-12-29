@@ -2,6 +2,11 @@
 export const SITE_TITLE = "I'm your Grandpa!";
 export const SITE_DESCRIPTION = 'Welcome to my website!';
 
+export const leveling = {
+    beginer: "Grandkid",
+    advance: "Grandteen",
+    pro: "Grandkiddo",
+}
 export interface typeIcons {
     google: JSX.Element;
     meta: JSX.Element;
