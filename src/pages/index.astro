@@ -3,8 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
-
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -21,24 +21,22 @@ import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 				</div>
 				<img class="max-w-[500px] max-sm:w-full" src="/avatar.webp" alt="avatar">
 			</div>
-			<div class="mt-[9rem] p-9 rounded-lg bg-gradient-to-br from-zinc-950 to-zinc-900">
+			<div class="pt-[9rem] ">
 				<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">Choose the platform you want to learn about</h1>
 				<div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
 					{cardplatforms.map((list) =>(
-						<a href={list.path} class="flex flex-col items-center justify-center relative p-5 bg-zinc-950 rounded-lg border border-zinc-700 hover:border-lime-400 hover:transition-all ease-linear duration-500">
-							<div class="right-5 p-2 rounded-md bg-lime-950 w-max">
-								<img class="w-[45px] h-[45px] fill-lime-500" src={list.iconSVG} alt="icons"/>
+						<div class="relative p-5 rounded-lg border border-zinc-700 hover:border-lime-400 hover:transition-all ease-linear duration-500">
+							<div class="absolute right-5 p-2 rounded-md bg-lime-950 ">
+								<img class="w-[25px] h-[25px] fill-lime-500" src={list.iconSVG} alt="icons"/>
 							</div>
 							<div class="mt-[1rem]">
-								<h1 class="text-2xl text-lime-400 text-center leading-none m-0">{list.title}</h1>
+								<h1 class="text-4xl text-lime-400">{list.title}</h1>
+								<h3 class="text-[1rem] max-sm:text-[14px] text-zinc-400 font-normal py-4">{list.description}</h3>
+								<a class={'flex items-center justify-center py-2 leading-none rounded-lg bg-lime-600 hover:bg-lime-400 transition-colors ease-linear duration-500'} href={list.path}>Get Started</a>
 							</div>
-						</a>
+						</div>
 					))}
 				</div>
-			</div>
-			<!-- END -->
-			<div>
-				<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">Read My Blogs</h1>
 			</div>
 		</main>
 		<Footer />

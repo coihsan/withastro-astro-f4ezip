@@ -1,4 +1,4 @@
-
+import {Google} from '../src/constants/tag'
 export const SITE_TITLE = "I'm your Grandpa!";
 export const SITE_DESCRIPTION = 'Welcome to my website!';
 
