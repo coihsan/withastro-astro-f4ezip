@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { ViewTransitions } from "astro:transitions";
 type Props = CollectionEntry<'blog'>['data'];
-
+const { minutesRead } = Astro.props.frontmatter;
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
@@ -74,6 +74,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							}
 						</div>
 						<h1>{title}</h1>
+						<p>{minutesRead}</p>
 						<hr />
 					</div>
 					<slot />
