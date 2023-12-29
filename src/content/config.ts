@@ -1,4 +1,5 @@
 import { defineCollection, reference, z } from 'astro:content';
+import { remarkReadingTime } from './remark-reading-time.mjs';
 
 const blog = defineCollection({
 	type: 'content',
@@ -11,6 +12,7 @@ const blog = defineCollection({
             src: z.string().optional().default(''),
             alt: z.string().optional().default(''),
         }).optional(),
+		tags: z.string()
 	}),
 });
 

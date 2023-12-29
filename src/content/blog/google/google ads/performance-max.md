@@ -5,7 +5,7 @@ pubDate: 'Dec 08 2023'
 heroImage: 
     src: '/blog-placeholder-2.jpg'
     alt: 'Thumbnail of Astro rays.'
-# tags: ["astro", "learning in public", "setbacks", "community"]
+tags: "Google Ads"
 ---
 
 Remember the days of juggling multiple Google Ads campaigns for search, display, YouTube, and more? Enter Performance Max, the ambitious all-in-one campaign type launched in 2021 that promises to simplify campaign management and maximize results across the entire Google Ads ecosystem.
