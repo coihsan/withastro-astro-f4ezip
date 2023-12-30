@@ -6,6 +6,7 @@ heroImage:
     src: '/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
 tags: "Google Ads"
+minutesRead : "3 minutes"
 ---
 
 While Google may not have officially declared a major core update in December 2023, the search engine landscape has definitely seen some interesting shifts and fluctuations throughout the month. This has left many website owners and SEO professionals scratching their heads, wondering what exactly is going on and how to adapt their strategies.
