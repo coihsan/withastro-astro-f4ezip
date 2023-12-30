@@ -15,6 +15,6 @@ const { Content, remarkPluginFrontmatter } = await post.render();
 ---
 
 <BlogPost {...post.data}>
+  <p>{remarkPluginFrontmatter.minutesRead}</p>
 	<Content />
-	<p>{remarkPluginFrontmatter.minutesRead}</p>
 </BlogPost>
