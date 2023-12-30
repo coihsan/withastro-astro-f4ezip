@@ -6,7 +6,6 @@ heroImage:
     src: '/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
 tags: "Google Ads"
-minutesRead : "3 minutes"
 ---
 
 Move over, spreadsheets and late nights! The future of Google Ads is paved with intelligent algorithms and automated processes. While the thought of robots managing your campaigns might send shivers down your spine, hear me out: embracing automation in Google Ads isn't just a trend, it's a strategic superpower.

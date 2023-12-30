@@ -1,4 +1,7 @@
 import { defineCollection, reference, z } from "astro:content";
+const FrontmatterSchema = z.object({
+  estReadingTime: z.any(),
+});
 const blog = defineCollection({
   type: "content",
   schema: z.object({
@@ -13,7 +16,7 @@ const blog = defineCollection({
       })
       .optional(),
     tags: z.string(),
-    minutesRead: z.string()
+    frontmatter: FrontmatterSchema.optional()
   }),
 });
 
