@@ -13,7 +13,6 @@ const blog = defineCollection({
       })
       .optional(),
     tags: z.string(),
-    minutesRead: z.string(),
   }),
 });
 
