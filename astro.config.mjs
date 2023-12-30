@@ -9,10 +9,12 @@ import { remarkReadingTime } from "./src/remark-reading-time.mjs";
 export default defineConfig({
   site: "https://example.com",
   integrations: [mdx(), sitemap(), tailwind(), react()],
-  markdown: {
-    remarkPlugins: [remarkReadingTime],
-  },
+  
   markdownOptions: {
+    markdown: {
+      remarkPlugins: [remarkReadingTime],
+      extendDefaultPlugins: true,
+    },
     render: [
       astroRemark,
       {
