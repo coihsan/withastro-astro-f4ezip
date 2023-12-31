@@ -13,17 +13,21 @@ keyword:
 headings:
   - text: Introduction
     depth: 1
+    slug: whyai
   - text: Key Concepts
     depth: 2
+    slug: whyai
   - text: Example Usage
     depth: 2
+    slug: whyai
   - text: Conclusion
     depth: 1
+    slug: whyai
 ---
 
 Move over, spreadsheets and late nights! The future of Google Ads Search is paved with intelligent algorithms and AI-powered tools. While the thought of robots managing your campaigns might send shivers down your spine, hear me out: embracing AI in Google Ads Search isn't just a trend, it's a game-changer.
-
-# Why AI is Your Best Friend in Google Ads Search:
+{#whyai} 
+# Why AI is Your Best Friend in Google Ads Search: 
 
 Gone are the days of manually juggling keywords, ad copy, and bids across campaigns. Humans simply can't process information and react as quickly as AI. Enter AI, your tireless digital co-pilot, freeing you from tedious tasks and empowering you to focus on the bigger picture.
 

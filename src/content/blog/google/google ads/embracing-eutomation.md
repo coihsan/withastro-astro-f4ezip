@@ -13,12 +13,16 @@ keyword:
 headings:
   - text: Introduction
     depth: 1
+    slug: whyai
   - text: Key Concepts
     depth: 2
+    slug: whyai
   - text: Example Usage
     depth: 2
+    slug: whyai
   - text: Conclusion
     depth: 1
+    slug: whyai
 ---
 
 Move over, spreadsheets and late nights! The future of Google Ads is paved with intelligent algorithms and automated processes. While the thought of robots managing your campaigns might send shivers down your spine, hear me out: embracing automation in Google Ads isn't just a trend, it's a strategic superpower.

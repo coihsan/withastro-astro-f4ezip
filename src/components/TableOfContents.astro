@@ -20,11 +20,11 @@ function buildToc(headings) {
 }
 
 const toc = buildToc(Astro.props.headings);
-
+const isActive = "text-zinc-500"
 ---
 
 <nav class="toc">
-  <ul>
+  <ul class="*:text-zinc-400 *:hover:text-zinc-50">
     {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
   </ul>
 </nav>

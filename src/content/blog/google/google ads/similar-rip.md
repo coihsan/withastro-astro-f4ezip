@@ -13,12 +13,16 @@ keyword:
 headings:
   - text: Introduction
     depth: 1
+    slug: whyai
   - text: Key Concepts
     depth: 2
+    slug: whyai
   - text: Example Usage
     depth: 2
+    slug: whyai
   - text: Conclusion
     depth: 1
+    slug: whyai
 ---
 
 Remember Similar Audiences in Google Ads? Those magical segments that expanded your reach to users with eerily similar traits to your existing customers? Well, as of August 2023, they've officially joined the digital marketing graveyard. But why did Google axe this popular tool, and what does it mean for your ad campaigns? Buckle up, folks, because we're diving deep into the demise of Similar Audiences and charting your course forward.

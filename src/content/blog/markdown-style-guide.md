@@ -13,12 +13,16 @@ keyword:
 headings:
   - text: Introduction
     depth: 1
+    slug: whyai
   - text: Key Concepts
     depth: 2
+    slug: whyai
   - text: Example Usage
     depth: 2
+    slug: whyai
   - text: Conclusion
     depth: 1
+    slug: whyai
 
 ---
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
