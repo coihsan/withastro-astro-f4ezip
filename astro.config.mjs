@@ -5,6 +5,8 @@ import tailwind from "@astrojs/tailwind";
 import astroRemark from "@astrojs/markdown-remark";
 import react from "@astrojs/react";
 import { remarkReadingTime } from "./src/lib/remark-reading-time.mjs";
+import markdownConfig from './src/lib/markdown.config'
+import astroRemark from "@astrojs/markdown-remark";
 // https://astro.build/config
 export default defineConfig({
   site: "https://example.com",
@@ -15,6 +17,12 @@ export default defineConfig({
       remarkPlugins: [remarkReadingTime],
       extendDefaultPlugins: true,
     },
+    // integrations: [
+    //   mdx({
+    //     ...markdownConfig,
+    //     extendPlugins: false,
+    //   }),
+    // ],
     render: [
       astroRemark,
       {
