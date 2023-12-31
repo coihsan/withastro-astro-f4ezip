@@ -24,7 +24,6 @@ const { title, description, pubDate, updatedDate, heroImage, frontmatter, headin
 		<Header />
 		<main>
 			<article class="mt-12">
-				<TableOfContents headings={headings} />
 				<div class="relative flex items-center justify-center flex-wrap bg-teal-800 h-[400px] rounded-lg p-5">
 					<!-- {
 						heroImage && (
@@ -53,8 +52,14 @@ const { title, description, pubDate, updatedDate, heroImage, frontmatter, headin
 					</div>
 				</div>
 
-				<div class="pt-12 list-disc">
-					<slot />
+				<div class="pt-12 list-disc flex">
+					<div class="min-w-[300px] border p-5 h-max">
+						<span>In this article</span>
+						<TableOfContents headings={headings} />
+					</div>
+					<div class="ml-5">
+						<slot />
+					</div>
 				</div>
 			</article>
 		</main>

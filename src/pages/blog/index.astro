@@ -15,14 +15,14 @@ const posts = (await getCollection("blog")).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="">
 		<Header />
-		<main>
+		<main class="max-w-screen-xl mx-auto">
 			<section class="mt-12">
-				<ul class="grid grid-cols-3 gap-4">
+				<div class="grid grid-cols-3 gap-4">
 					{
 						posts.map((post) => (
-							<li class="border border-zinc-100/30 rounded-lg">
+							<div class="border border-zinc-100/30 rounded-lg">
 								<a
 									class="relative"
 									href={`/blog/${post.slug}/`}
@@ -43,10 +43,10 @@ const posts = (await getCollection("blog")).sort(
 										</p>
 									</div>
 								</a>
-							</li>
+							</div>
 						))
 					}
-				</ul>
+				</div>
 			</section>
 		</main>
 		<Footer />

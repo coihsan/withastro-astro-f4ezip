@@ -99,7 +99,12 @@ ul {
   -webkit-padding-start: 5%;
   -webkit-padding-end: 5%;
 }
-
+ul{
+	list-style-type: disc;
+}
+ol{
+	list-style-type: decimal;
+}
 li {
   margin: 1rem 0;
 }

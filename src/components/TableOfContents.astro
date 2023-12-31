@@ -2,19 +2,25 @@
 import TableOfContentsHeading from "../components/TableOfContentsHeading.astro";
 const { headings } = Astro.props;
 function buildToc(headings) {
+  const toc = [];
   const parentHeadings = new Map();
+
   headings.forEach((h) => {
     const heading = { ...h, subheadings: [] };
     parentHeadings.set(heading.depth, heading);
+
     if (heading.depth === 1) {
       toc.push(heading);
     } else {
       parentHeadings.get(heading.depth - 1).subheadings.push(heading);
     }
   });
+
   return toc;
 }
+
 const toc = buildToc(Astro.props.headings);
+
 ---
 
 <nav class="toc">
