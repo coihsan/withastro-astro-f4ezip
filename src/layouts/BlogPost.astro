@@ -4,7 +4,6 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
-import { ViewTransitions } from "astro:transitions";
 import TableOfContents from "../components/TableOfContents.astro";
 type Props = CollectionEntry<"blog">["data"];
 const { title, description, pubDate, updatedDate, heroImage, frontmatter, headings} =
@@ -14,13 +13,6 @@ const { title, description, pubDate, updatedDate, heroImage, frontmatter, headin
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		<ViewTransitions />
-		<style>
-			ul{
-				list-style-type: armenian;
-			}
-		</style>
-		
 	</head>
 
 	<body>
