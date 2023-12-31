@@ -6,6 +6,7 @@ heroImage:
   src: '/blog-placeholder-1.jpg'
   alt: 'Thumbnail of Astro rays.'
 tags: "Google Ads" 
+
 ---
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
