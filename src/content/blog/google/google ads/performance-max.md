@@ -6,6 +6,17 @@ heroImage:
     src: '/blog-placeholder-2.jpg'
     alt: 'Thumbnail of Astro rays.'
 tags: "Google Ads"
+category: "Google Ads"
+keyword: ["Belajar Google", "Belajar Google Ads"]
+headings:
+  - text: Introduction
+    depth: 1
+  - text: Key Concepts
+    depth: 2
+  - text: Example Usage
+    depth: 2
+  - text: Conclusion
+    depth: 1
 ---
 
 Remember the days of juggling multiple Google Ads campaigns for search, display, YouTube, and more? Enter Performance Max, the ambitious all-in-one campaign type launched in 2021 that promises to simplify campaign management and maximize results across the entire Google Ads ecosystem.

@@ -6,6 +6,17 @@ heroImage:
     src: '/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
 tags: "Google Ads"
+category: "Google Ads"
+keyword: ["Belajar Google", "Belajar Google Ads"]
+headings:
+  - text: Introduction
+    depth: 1
+  - text: Key Concepts
+    depth: 2
+  - text: Example Usage
+    depth: 2
+  - text: Conclusion
+    depth: 1
 ---
 
 Move over, spreadsheets and late nights! The future of Google Ads is paved with intelligent algorithms and automated processes. While the thought of robots managing your campaigns might send shivers down your spine, hear me out: embracing automation in Google Ads isn't just a trend, it's a strategic superpower.

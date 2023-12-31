@@ -17,12 +17,12 @@ export default defineConfig({
       remarkPlugins: [remarkReadingTime],
       extendDefaultPlugins: true,
     },
-    // integrations: [
-    //   mdx({
-    //     ...markdownConfig,
-    //     extendPlugins: false,
-    //   }),
-    // ],
+    integrations: [
+      mdx({
+        ...markdownConfig,
+        extendPlugins: false,
+      }),
+    ],
     render: [
       astroRemark,
       {

@@ -5,7 +5,18 @@ pubDate: 'Jul 01 2022'
 heroImage: 
   src: '/blog-placeholder-1.jpg'
   alt: 'Thumbnail of Astro rays.'
-tags: "Google Ads" 
+tags: "Google Ads"
+category: "Google Ads"
+keyword: ["Belajar Google", "Belajar Google Ads"]
+headings:
+  - text: Introduction
+    depth: 1
+  - text: Key Concepts
+    depth: 2
+  - text: Example Usage
+    depth: 2
+  - text: Conclusion
+    depth: 1
 
 ---
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
