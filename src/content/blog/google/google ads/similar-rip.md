@@ -5,9 +5,11 @@ pubDate: 'Jul 08 2022'
 heroImage: 
     src: '/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
-tags: "Google Ads"
+tags: 
+    - "Google Ads"
 category: "Google Ads"
-keyword: ["Belajar Google", "Belajar Google Ads"]
+keyword: 
+    - "Belajar Google"
 headings:
   - text: Introduction
     depth: 1
