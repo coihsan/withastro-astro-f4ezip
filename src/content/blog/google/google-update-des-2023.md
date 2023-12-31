@@ -11,7 +11,7 @@ minutesRead : "3 minutes"
 
 While Google may not have officially declared a major core update in December 2023, the search engine landscape has definitely seen some interesting shifts and fluctuations throughout the month. This has left many website owners and SEO professionals scratching their heads, wondering what exactly is going on and how to adapt their strategies.
 
-### The Buzz on Ranking Fluctuations
+# The Buzz on Ranking Fluctuations
 
 Reports of ranking changes, both positive and negative, have been widespread across various websites and industries. This could be attributed to a number of factors, including:
 
@@ -22,7 +22,7 @@ E-A-T Remains King:
 
 One thing remains clear: Google's emphasis on E-A-T (Expertise, Authoritativeness, and Trustworthiness) continues to be a central pillar of its ranking algorithms. Websites that demonstrate a strong understanding of their subject matter, build trust with their audience, and establish themselves as authoritative sources within their field are more likely to enjoy higher rankings.
 
-### Focus on These Key Areas:
+## Focus on These Key Areas:
 
 To navigate the ever-evolving Google landscape in December 2023 and beyond, website owners and SEO professionals should focus on:
 

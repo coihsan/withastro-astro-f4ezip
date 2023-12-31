@@ -10,11 +10,11 @@ tags: "Google Ads"
 
 Move over, spreadsheets and late nights! The future of Google Ads Search is paved with intelligent algorithms and AI-powered tools. While the thought of robots managing your campaigns might send shivers down your spine, hear me out: embracing AI in Google Ads Search isn't just a trend, it's a game-changer.
 
-Why AI is Your Best Friend in Google Ads Search:
+# Why AI is Your Best Friend in Google Ads Search:
 
 Gone are the days of manually juggling keywords, ad copy, and bids across campaigns. Humans simply can't process information and react as quickly as AI. Enter AI, your tireless digital co-pilot, freeing you from tedious tasks and empowering you to focus on the bigger picture.
 
-AI's Magic Tricks:
+# AI's Magic Tricks:
 
 Here's how AI can supercharge your Google Ads Search campaigns:
 
