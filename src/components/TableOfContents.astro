@@ -1,7 +1,6 @@
 ---
 import TableOfContentsHeading from "../components/TableOfContentsHeading.astro";
 const { headings } = Astro.props;
-const toc = buildToc(headings);
 function buildToc(headings) {
   const parentHeadings = new Map();
   headings.forEach((h) => {
@@ -15,6 +14,7 @@ function buildToc(headings) {
   });
   return toc;
 }
+const toc = buildToc(Astro.props.headings);
 ---
 
 <nav class="toc">
