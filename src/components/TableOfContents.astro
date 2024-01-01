@@ -1,32 +1,25 @@
 ---
 import TableOfContentsHeading from "../components/TableOfContentsHeading.astro";
-const { heading } = Astro.props.blog;
+const { frontmatter, headings, subheadings } = Astro.props;
+const toc = buildToc(headings);
 
-interface Heading {
-  subheadings?: never[];
-  text: string;
-  depth: number;
-  slug?: string;
-}
-function buildToc(headings: Heading[]) {
+function buildToc(headings: Array<{ text: string, depth: number, subheadings?: string[] }>)  {
   const toc = [];
   const parentHeadings = new Map();
 
-  headings.forEach((h: Heading) => {
-    const heading = { ...h, subheadings: [] };
+  headings.forEach((h) => {
+    const heading = { ...h, subheadings: [] as any[] };
     parentHeadings.set(heading.depth, heading);
 
-    if (heading.depth === 1) {
+    if (heading.depth === 2) {
       toc.push(heading);
     } else {
-      parentHeadings.get(heading.depth - 1).subheadings.push(heading);
+      parentHeadings.get(heading.depth - 1)?.subheadings.push(heading);
     }
   });
 
   return toc;
 }
-
-const toc = buildToc(Astro.props.blog.headings);
 const isActive = "text-zinc-500"
 ---
 

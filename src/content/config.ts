@@ -23,7 +23,8 @@ const blog = defineCollection({
       text: z.string(),
       depth: z.number(),
       slug: z.string().optional()
-    })),
+    })).optional(),
+    subheadings: z.string().optional()
   }),
 });
 
