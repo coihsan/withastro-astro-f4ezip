@@ -22,7 +22,7 @@ const blog = defineCollection({
     headings: z.array(z.object({
       text: z.string(),
       depth: z.number(),
-      slug: z.string()
+      slug: z.string().optional()
     })),
   }),
 });
