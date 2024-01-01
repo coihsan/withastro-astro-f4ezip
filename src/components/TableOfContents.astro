@@ -1,9 +1,9 @@
 ---
 import TableOfContentsHeading from "../components/TableOfContentsHeading.astro";
-const { headings } = Astro.props.blog;
+const { heading } = Astro.props.blog;
 
 interface Heading {
-  subheadings?: string;
+  subheadings?: never[];
   text: string;
   depth: number;
   slug?: string;

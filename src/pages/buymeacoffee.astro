@@ -4,19 +4,21 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { IconsUI } from '../constants/Icons';
-
+const PageTitle = "Buy me a Coffee"
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<title>{PageTitle}</title>
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>🧑 Buy Me a Coffee ${IconsUI.calender}</h1>
-			<img src="/public/icons/google.svg" alt="">
+			<div class="pt-12">
+				<h1>🧑 Buy Me a Coffee {IconsUI.calender}</h1>
+			</div>
 		</main>
 		<Footer />
 	</body>
