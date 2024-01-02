@@ -1,6 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
+import Greeting from '../components/Greeting';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 import { ViewTransitions } from "astro:transitions";
@@ -17,6 +18,7 @@ import { ViewTransitions } from "astro:transitions";
 		<main>
 			<div class="mt-12 flex items-center justify-between w-full max-sm:flex-col-reverse">
 				<div class="flex flex-col max-sm:*:text-center">
+					<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
 					<span class="max-sm:text-[16px]max-sm:mx-auto text-lime-400 leading-none bg-lime-950 py-2 px-5 w-max rounded-full">Hi Grandkids, I'm your Grandpa!</span>
 					<h1 class="atkinso700 text-[3.1rem] font-bold  max-sm:text-3xl leading-none pt-[1rem] ">I'll teach you digital marketing best practices that are easy to implement in your work, <span class="text-lime-400">because Grandpa Knows Best!</span></h1>
 					<p class="text-2xl text-zinc-400 leading-none">If you want to learn digital marketing the right way, <span class="text-lime-400 underline">obey your grandpa</span>. I've been in the game for years and know what I'm talking about.</p>
