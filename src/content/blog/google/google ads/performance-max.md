@@ -1,5 +1,5 @@
 ---
-title: 'Mastering the Multiverse: Navigating Google Ads Performance Max in 2023'
+title: 'Navigating Google Ads Performance Max in 2023'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2023'
 heroImage: 

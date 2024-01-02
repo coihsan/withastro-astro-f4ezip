@@ -1,5 +1,5 @@
 ---
-title: 'Embrace the Rise of the Machines: Embracing Automation in Google Ads'
+title: 'Embracing Automation in Google Ads'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2023'
 heroImage: 

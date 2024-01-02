@@ -1,5 +1,5 @@
 ---
-title: 'The Rise of the Robots: How AI is Revolutionizing Google Ads Search'
+title: 'How AI is Revolutionizing Google Ads Search'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2023'
 heroImage: 

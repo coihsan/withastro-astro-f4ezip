@@ -1,5 +1,5 @@
 ---
-title: 'Conquering the Search Labyrinth: Leveraging AI to Master Google Ads'
+title: 'Leveraging AI to Master Google Ads'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2023'
 heroImage: 

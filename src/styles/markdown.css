@@ -21,3 +21,31 @@ a:hover{
 mark{
    background-color: aquamarine; 
 }
+ul,
+ol {
+  font-size: 1.3rem;
+  margin: 1.2em 0;
+}
+
+ol,
+ul {
+  padding-left: 1rem;
+}
+ul{
+    list-style-type: none;
+}
+li::before {
+    content: "\2022"; 
+    color: #a3e635;
+}
+ol{
+	list-style-type: decimal;
+}
+li {
+	font-size: 1rem;
+  	margin: 1rem 0;
+    position: relative;
+}
+p{
+    font-size: 1rem;
+}
