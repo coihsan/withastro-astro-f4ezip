@@ -1,0 +1,43 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../../consts';
+import BlogPost from "../../layouts/BlogPost.astro";
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob('../../content/blog/*.md');
+
+  return [
+    {params: {tags: "Google Ads"}, props: {posts: allPosts}},
+    {params: {tags: "Google Search"}, props: {posts: allPosts}},
+    {params: {tags: "Bidding Strategy"}, props: {posts: allPosts}},
+    {params: {tags: "blogging"}, props: {posts: allPosts}},
+    {params: {tags: "setbacks"}, props: {posts: allPosts}},
+    {params: {tags: "learning in public"}, props: {posts: allPosts}}
+  ]
+}
+
+const { tags } = Astro.params;
+const { posts } = Astro.props;
+const filteredPosts = posts.filter((post) => post.frontmatter.tags?.includes(tags));
+const PageTitle = "All Tags"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<title>{PageTitle}</title>
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<div class="pt-12">
+				<ul>
+                    {filteredPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title}/>)}
+                </ul>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

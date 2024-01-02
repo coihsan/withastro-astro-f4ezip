@@ -7,6 +7,7 @@ heroImage:
     alt: 'Thumbnail of Astro rays.'
 tags: 
     - "Google Ads"
+    - "Performance Max"
 category: "Google Ads"
 keyword: 
     - "Belajar Google"
