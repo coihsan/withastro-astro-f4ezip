@@ -50,7 +50,7 @@ export const cardplatforms: CardPlatform[] = [
             },
             {
                 tag: "Google Ads",
-                url: "string",
+                url: "/Google-Ads",
             },
             {
                 tag: "Google Analytics",
