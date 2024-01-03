@@ -42,7 +42,7 @@ export const cardplatforms: CardPlatform[] = [
         title: "Google",
         description: "The world's most popular search engine is a powerful tool for finding information, but it can be overwhelming. Let me teach you how to use Google to your advantage.",
         path: "/",
-        iconSVG: '/public/icons/google.svg',
+        iconSVG: '/icons/google.svg',
         categories: [
             {
                 tag: "Google Algorithm",

@@ -1,13 +1,12 @@
 ---
-title: 'The SEO vs. PPC Showdown: A Battle for Traffic and Leads'
-description: 'In the ever-evolving landscape of digital marketing, a heated debate rages - SEO vs. PPC.'
-pubDate: 'Jan 04 2024'
+title: 'SEO vs PPC! A Battle for Traffic and Leads'
+description: 'Which of the two is superior and suitable for you considering the greater value of your investment?'
+pubDate: 'Jul 08 2022'
 heroImage: 
-  src: './images/blog-placeholder-1.jpg'
-  alt: 'Thumbnail of Astro rays.'
+    src: './images/blog-placeholder-3.jpg'
+    alt: 'Thumbnail of Astro rays.'
 tags: 
     - "Google Ads"
-    - "SEO"
 category: "Google Ads"
 keyword: 
     - "Belajar Google"
@@ -24,7 +23,6 @@ headings:
   - text: Conclusion
     depth: 1
     slug: whyai
-
 ---
 In the ever-evolving landscape of digital marketing, a heated debate rages - SEO vs. PPC. Both tactics promise website traffic and leads, but their approaches differ like night and day. Choosing the "better" one is like picking a favorite child (don't worry, we won't force you!). Instead, let's dive into their strengths and weaknesses to understand which champion suits your needs.
 
