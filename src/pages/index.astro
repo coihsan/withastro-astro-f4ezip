@@ -5,43 +5,33 @@ import Greeting from '../components/Greeting';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 import { ViewTransitions } from "astro:transitions";
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<ViewTransitions />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<div class="mt-12 flex items-center justify-between w-full max-sm:flex-col-reverse">
-				<div class="flex flex-col max-sm:*:text-center">
-					<Greeting client:load messages={["Hi Grandkid", "Hello Grandteen", "Howdy Grandkiddo", "Hey there"]} text={" Thank you for visiting!"} />
-					<h1 class="atkinso700 text-[3.1rem] font-bold  max-sm:text-3xl leading-none pt-[1rem] ">I'll teach you digital marketing best practices that are easy to implement in your work, <span class="text-lime-400">because Grandpa Knows Best!</span></h1>
-					<p class="text-2xl text-zinc-400 leading-none">If you want to learn digital marketing the right way, <span class="text-lime-400 underline">obey your grandpa</span>. I've been in the game for years and know what I'm talking about.</p>
+<BaseLayout>
+	<div class="flex items-center justify-between w-full max-sm:flex-col-reverse">
+		<div class="flex flex-col max-sm:*:text-center">
+			<Greeting client:load messages={["Hi Grandkid", "Hello Grandteen", "Howdy Grandkiddo", "Hey there"]} text={" Thank you for visiting!"} />
+			<h1 class="atkinso700 text-[3.1rem] font-bold  max-sm:text-3xl leading-none pt-[1rem] ">I'll teach you digital marketing best practices that are easy to implement in your work, <span class="text-lime-400">because Grandpa Knows Best!</span></h1>
+			<p class="text-2xl text-zinc-400 leading-none">If you want to learn digital marketing the right way, <span class="text-lime-400 underline">obey your grandpa</span>. I've been in the game for years and know what I'm talking about.</p>
+		</div>
+		<img class="max-w-[500px] max-sm:w-full" src="/avatar.webp" alt="avatar">
+	</div>
+	<div class="pt-[9rem] ">
+		<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">Choose the platform you want to learn about</h1>
+		<div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
+			{cardplatforms.map((list) =>(
+				<div class="relative p-5 rounded-lg border border-zinc-600/30 hover:border-lime-400 hover:transition-all ease-linear duration-500 bg-onyx-950">
+					<div class="absolute right-5 p-2 rounded-md bg-lime-950 ">
+						<img class="w-[25px] h-[25px] fill-lime-500" src={list.iconSVG} alt="icons"/>
+					</div>
+					<div class="mt-[1rem]">
+						<h1 class="text-4xl text-lime-400">{list.title}</h1>
+						<h3 class="text-[1rem] max-sm:text-[14px] text-zinc-400 font-normal py-4">{list.description}</h3>
+						<a class={'flex items-center justify-center py-2 leading-none rounded-lg bg-lime-600 hover:bg-lime-400 transition-colors ease-linear duration-500'} href={list.path}>Get Started</a>
+					</div>
 				</div>
-				<img class="max-w-[500px] max-sm:w-full" src="/avatar.webp" alt="avatar">
-			</div>
-			<div class="pt-[9rem] ">
-				<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">Choose the platform you want to learn about</h1>
-				<div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
-					{cardplatforms.map((list) =>(
-						<div class="relative p-5 rounded-lg border border-zinc-600/30 hover:border-lime-400 hover:transition-all ease-linear duration-500 bg-onyx-950">
-							<div class="absolute right-5 p-2 rounded-md bg-lime-950 ">
-								<img class="w-[25px] h-[25px] fill-lime-500" src={list.iconSVG} alt="icons"/>
-							</div>
-							<div class="mt-[1rem]">
-								<h1 class="text-4xl text-lime-400">{list.title}</h1>
-								<h3 class="text-[1rem] max-sm:text-[14px] text-zinc-400 font-normal py-4">{list.description}</h3>
-								<a class={'flex items-center justify-center py-2 leading-none rounded-lg bg-lime-600 hover:bg-lime-400 transition-colors ease-linear duration-500'} href={list.path}>Get Started</a>
-							</div>
-						</div>
-					))}
-				</div>
-			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+			))}
+		</div>
+	</div>
+</BaseLayout>

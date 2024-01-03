@@ -4,20 +4,10 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { IconsUI } from '../constants/Icons';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 ---
-
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main class="pt-12">
-			<h1>🧑 Tools ${IconsUI.calender}</h1>
-			<img src="/public/icons/google.svg" alt="">
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout>
+	<h1>🧑 Tools ${IconsUI.calender}</h1>
+	<img src="/public/icons/google.svg" alt="">
+</BaseLayout>

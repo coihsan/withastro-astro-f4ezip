@@ -3,7 +3,7 @@ title: 'Broad Match in Google Ads, Friend or Foe?'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2023'
 heroImage: 
-    src: '/blog-placeholder-3.jpg'
+    src: './images/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
 tags: 
     - "Google Ads"

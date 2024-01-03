@@ -23,7 +23,7 @@ const posts = (await getCollection("blog")).sort(
 		<Header />
 		<main class="max-w-screen-xl mx-auto">
 			<section class="mt-12">
-				<div>
+				<div class="mb-12 flex flex-col items-center">
 					<Greeting client:load messages={["Listen Grandkid", "Liste Grandteen", "Listen Grandkiddo"]} text={" Here i own"} />
 					<p>I have many articles for you read anytime, and i'm always update this my own</p>
 				</div>

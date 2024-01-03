@@ -3,7 +3,7 @@ title: 'Conquering the Campaign Objective Crossroads: A Strategic Guide to Googl
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2024'
 heroImage: 
-    src: '/blog-placeholder-3.jpg'
+    src: './images/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
 tags: 
     - "Google Ads"

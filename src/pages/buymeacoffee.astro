@@ -5,23 +5,12 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { IconsUI } from '../constants/Icons';
 import { ViewTransitions } from "astro:transitions";
+import BaseLayout from '../layouts/BaseLayout.astro';
 const PageTitle = "Buy me a Coffee"
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<ViewTransitions />
-		<title>{PageTitle}</title>
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<div class="pt-12">
-				<h1>🧑 Buy Me a Coffee {IconsUI.calender}</h1>
-			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout>
+	<div>
+		<h1>🧑 Buy Me a Coffee {IconsUI.calender}</h1>
+	</div>
+</BaseLayout>

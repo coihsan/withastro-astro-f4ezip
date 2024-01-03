@@ -5,20 +5,10 @@ import Greeting from '../components/Greeting';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 import { ViewTransitions } from "astro:transitions";
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<ViewTransitions />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main class="flex items-center justify-center">
-			<h1>Sorry Not Found</h1>
-            <a href="/">Go Back!</a>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout>
+	<h1>Sorry Not Found</h1>
+    <a class="px-5 py-2 rounded-lg bg-onyx-900" href="/">Go Back!</a>
+</BaseLayout>

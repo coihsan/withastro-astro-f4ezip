@@ -3,7 +3,7 @@ title: 'Googles December 2023 Algorithm Update Explained'
 description: 'Google has pulled the plug on this once-powerful tool. But why did they do it, and what does it mean for your ad campaigns?'
 pubDate: 'Jul 08 2022'
 heroImage: 
-    src: '/blog-placeholder-3.jpg'
+    src: './images/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
 tags: 
     - "Google Ads"

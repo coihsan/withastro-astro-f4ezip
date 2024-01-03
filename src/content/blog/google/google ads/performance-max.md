@@ -3,7 +3,7 @@ title: 'Navigating Google Ads Performance Max in 2023'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2023'
 heroImage: 
-    src: '/blog-placeholder-2.jpg'
+    src: './images/blog-placeholder-2.jpg'
     alt: 'Thumbnail of Astro rays.'
 tags: 
     - "Google Ads"
