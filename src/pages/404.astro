@@ -1,8 +1,9 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
+import Greeting from '../components/Greeting';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
 import { ViewTransitions } from "astro:transitions";
 ---
 
@@ -14,8 +15,9 @@ import { ViewTransitions } from "astro:transitions";
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-		<main class="pt-12">
-			<h1>🧑 Buy Me a Coffee</h1>
+		<main class="flex items-center justify-center">
+			<h1>Sorry Not Found</h1>
+            <a href="/">Go Back!</a>
 		</main>
 		<Footer />
 	</body>

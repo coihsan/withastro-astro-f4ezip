@@ -2,6 +2,8 @@ main{
     width: calc(100% - 2em);
 	max-width: 100%;
 	margin: 0;
+    font-family: 'IBM Plex Mono', sans-serif;
+    letter-spacing: 0.025em;
 }
 h1{
     font-size: 3rem;

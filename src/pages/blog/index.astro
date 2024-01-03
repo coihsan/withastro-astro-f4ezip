@@ -3,9 +3,10 @@ import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
-import { IconsUI } from "../../constants/Icons";
+import Greeting from "../../components/Greeting";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
+import { ViewTransitions } from "astro:transitions";
 import { Image } from "astro:assets";
 const posts = (await getCollection("blog")).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
@@ -16,18 +17,20 @@ const posts = (await getCollection("blog")).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-
-		</style>
+		<ViewTransitions />
 	</head>
 	<body class="">
 		<Header />
 		<main class="max-w-screen-xl mx-auto">
 			<section class="mt-12">
+				<div>
+					<Greeting client:load messages={["Listen Grandkid", "Liste Grandteen", "Listen Grandkiddo"]} text={" Here i own"} />
+					<p>I have many articles for you read anytime, and i'm always update this my own</p>
+				</div>
 				<div class="grid grid-cols-3 gap-4">
 					{
 						posts.map((post) => (
-							<div class="border border-zinc-100/30 rounded-lg">
+							<div class="border border-zinc-600/30 rounded-lg bg-onyx-950">
 								<a
 									class="relative"
 									href={`/blog/${post.slug}/`}
@@ -40,17 +43,23 @@ const posts = (await getCollection("blog")).sort(
 										alt={post.data.heroImage?.alt}
 									/>
 									<div class="p-5">
-										<div class="border-b-2 border-zinc-800 pb-5">
-											<h4 class="text-[1.4rem] leading-8">{post.data.title}</h4>
-											<p class="text-sm line-clamp-2 leading-4 text-zinc-400">{post.data.description}</p>
+										<div class="pb-2 flex items-center justify-between border-b-2 border-zinc-800">
+											<div class="flex items-center gap-1 ">
+												<Image src="/icons/calender.svg" alt="calender" width="20" height="20" />
+												<p class="text-[14px] text-zinc-400 leading-none">
+												<FormattedDate
+													date={post.data.pubDate}
+													/>
+												</p>
+											</div>
+											<div class="flex items-center gap-1 ">
+												<Image src="/icons/label.svg" alt="label" width="20" height="20" />
+												<span class="text-[14px] text-zinc-400 leading-none">categories</span>
+											</div>
 										</div>
-										<div class="pt-5 flex items-center gap-1">
-											<Image src="/icons/calender.svg" alt="calender" width="20" height="20" />
-											<p class="text-[14px] text-zinc-400 leading-none">
-											<FormattedDate
-												date={post.data.pubDate}
-												/>
-											</p>
+										<div class="pt-5">
+											<h4 class="text-[1.2rem] leading-6">{post.data.title}</h4>
+											<p class="text-sm line-clamp-2 leading-4 text-zinc-400">{post.data.description}</p>
 										</div>
 									</div>
 								</a>

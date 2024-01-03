@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { IconsUI } from '../constants/Icons';
+import { ViewTransitions } from "astro:transitions";
 const PageTitle = "Buy me a Coffee"
 ---
 
@@ -11,6 +12,7 @@ const PageTitle = "Buy me a Coffee"
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<ViewTransitions />
 		<title>{PageTitle}</title>
 	</head>
 	<body>
