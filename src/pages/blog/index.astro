@@ -22,13 +22,13 @@ const posts = (await getCollection("blog")).sort(
 						class="relative"
 						href={`/blog/${post.slug}/`}
 					>
-						// <img
-						// class="rounded-lg"
-						// 	width={720}
-						// 	height={360}
-						// 	src={post.data.heroImage?.src}
-						// 	alt={post.data.heroImage?.alt}
-						// />
+						<img
+						class="rounded-lg"
+							width={720}
+							height={360}
+							src={post.data.heroImage?.src}
+							alt={post.data.heroImage?.alt}
+						/>
 						<div class="p-5">
 							<div class="pb-2 flex items-center justify-between border-b-2 border-zinc-800">
 								<div class="flex items-center gap-1 ">
