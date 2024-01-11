@@ -17,18 +17,18 @@ const posts = (await getCollection("blog")).sort(
 	<div class="grid grid-cols-3 gap-4">
 		{
 			posts.map((post) => (
-				<div class="border border-zinc-600/30 rounded-lg bg-onyx-950">
+				<div class="border border-zinc-600/30 rounded-lg bg-onyx-950 hover:scale-[1.03] transition-all duration-150 ease-in-out">
 					<a
 						class="relative"
 						href={`/blog/${post.slug}/`}
 					>
-						<img
-						class="rounded-lg"
-							width={720}
-							height={360}
-							src={post.data.heroImage?.src}
-							alt={post.data.heroImage?.alt}
-						/>
+						// <img
+						// class="rounded-lg"
+						// 	width={720}
+						// 	height={360}
+						// 	src={post.data.heroImage?.src}
+						// 	alt={post.data.heroImage?.alt}
+						// />
 						<div class="p-5">
 							<div class="pb-2 flex items-center justify-between border-b-2 border-zinc-800">
 								<div class="flex items-center gap-1 ">
