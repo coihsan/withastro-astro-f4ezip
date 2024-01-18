@@ -17,7 +17,7 @@ const posts = (await getCollection("blog")).sort(
 	<div class="grid grid-cols-3 gap-4">
 		{
 			posts.map((post) => (
-				<div class="border border-zinc-600/30 rounded-lg bg-onyx-950 hover:scale-[1.03] transition-all duration-150 ease-in-out">
+				<div class="border border-zinc-600/30 rounded-lg bg-onyx-950">
 					<a
 						class="relative"
 						href={`/blog/${post.slug}/`}
@@ -41,7 +41,7 @@ const posts = (await getCollection("blog")).sort(
 								</div>
 								<div class="flex items-center gap-1 ">
 									<Image src="/icons/label.svg" alt="label" width="20" height="20" />
-									<span class="text-[14px] text-zinc-400 leading-none">categories</span>
+									<span class="text-[14px] text-zinc-400 leading-none">{post.data.category}</span>
 								</div>
 							</div>
 							<div class="pt-5">
