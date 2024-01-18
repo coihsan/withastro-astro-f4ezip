@@ -12,7 +12,11 @@ import astroRemark from "@astrojs/markdown-remark";
 export default defineConfig({
   site: "https://example.com",
   integrations: [mdx(), sitemap(), tailwind(), react(), preact()],
-  
+  build: {
+    rollupOptions: {
+      external: ['sanitize-html'],
+    },
+  },
   markdownOptions: {
     markdown: {
       remarkPlugins: [remarkReadingTime],
