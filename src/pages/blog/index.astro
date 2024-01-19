@@ -11,19 +11,30 @@ const posts = (await getCollection("blog")).sort(
 
 <BaseLayout>
 	<div class="mb-12 flex flex-col items-center">
-		<Greeting client:load messages={["Listen Grandkid", "Liste Grandteen", "Listen Grandkiddo"]} text={" Here i own"} />
-		<p>I have many articles for you read anytime, and i'm always update this my own</p>
+		<Greeting
+			client:load
+			messages={[
+				"Listen Grandkid",
+				"Liste Grandteen",
+				"Listen Grandkiddo",
+			]}
+			text={" Here i own"}
+		/>
+		<p>
+			I have many articles for you read anytime, and i'm always update
+			this my own
+		</p>
 	</div>
-	<div class="grid grid-cols-3 gap-4">
+	<div class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4">
 		{
 			posts.map((post) => (
 				<div class="border border-zinc-600/30 rounded-lg bg-onyx-950">
 					<a
-						class="relative"
+						class="relative max-sm:flex"
 						href={`/blog/${post.slug}/`}
 					>
 						<img
-						class="rounded-lg"
+							class="rounded-lg max-sm:hidden"
 							width={720}
 							height={360}
 							src={post.data.heroImage?.src}
@@ -32,21 +43,37 @@ const posts = (await getCollection("blog")).sort(
 						<div class="p-5">
 							<div class="pb-2 flex items-center justify-between border-b-2 border-zinc-800">
 								<div class="flex items-center gap-1 ">
-									<Image src="/icons/calender.svg" alt="calender" width="20" height="20" />
+									<Image
+										src="/icons/calender.svg"
+										alt="calender"
+										width="20"
+										height="20"
+									/>
 									<p class="text-[14px] text-zinc-400 leading-none">
-									<FormattedDate
-										date={post.data.pubDate}
+										<FormattedDate
+											date={post.data.pubDate}
 										/>
 									</p>
 								</div>
 								<div class="flex items-center gap-1 ">
-									<Image src="/icons/label.svg" alt="label" width="20" height="20" />
-									<span class="text-[14px] text-zinc-400 leading-none">{post.data.category}</span>
+									<Image
+										src="/icons/label.svg"
+										alt="label"
+										width="20"
+										height="20"
+									/>
+									<span class="text-[14px] text-zinc-400 leading-none">
+										{post.data.category}
+									</span>
 								</div>
 							</div>
 							<div class="pt-5">
-								<h4 class="text-[1.2rem] leading-6">{post.data.title}</h4>
-								<p class="text-sm line-clamp-2 leading-4 text-zinc-400">{post.data.description}</p>
+								<h4 class="text-[1.2rem] leading-6">
+									{post.data.title}
+								</h4>
+								<p class="text-sm line-clamp-2 leading-4 text-zinc-400">
+									{post.data.description}
+								</p>
 							</div>
 						</div>
 					</a>

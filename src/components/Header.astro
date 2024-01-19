@@ -1,61 +1,34 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
-import DarkMode from './UI/DarkMode.astro';
-import Hamburger from './UI/Hamburger.astro';
-import ThemeIcon from './UI/ThemeIcon.astro';
-import SearchBar from './UI/SearchBar.astro';
+import Navigation from "./Navigation.astro";
+import SearchBar from "./UI/SearchBar.astro";
 ---
 
-<header class="fixed bg-onyx-900 w-full z-50">
-	<nav class="relative flex items-center justify-between">
+<header
+	class="fixed bg-onyx-900 w-full z-50 border-b-[1px] border-lime-500 px-9 py-5 flex items-center"
+>
+	<nav class="w-full flex items-center justify-between">
 		<div class="flex items-center">
-			<a class="flex items-center" href="/">
-				<img class="w-[40px] h-[40px] rounded-full" src="/logo.webp" alt="logo">
-				<span class="pl-3 font-bold text-2xl text-lime-400 leading-none">Grandpa</span>
+			<a class="flex items-center mr-9 max-sm:mr-0" href="/">
+				<img
+					class="w-[40px] h-[40px] rounded-full"
+					src="/logo.webp"
+					alt="logo"
+				/>
+				<span class="pl-3 font-bold text-2xl text-lime-400 leading-none"
+					>Grandpa</span
+				>
 			</a>
-			<div class="ml-4 max-sm:absolute left-0 max-sm:flex max-sm:flex-col max-sm:bg-onyx-900 max-sm:w-full max-sm:m-0 max-sm:p-0">
-				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="/learns">Learn</HeaderLink>
-				<HeaderLink href="/blog">Blog</HeaderLink>
-				<HeaderLink href="/roadmap">Roadmap</HeaderLink>
-				<HeaderLink href="/tools">Tool's</HeaderLink>
-				<HeaderLink href="/buymeacoffee">Buy me a coffee!</HeaderLink>
+			<Navigation />
+		</div>
+		<div class="flex items-center">
+			<div class="flex gap-3">
+				<SearchBar />
 			</div>
 		</div>
-		<div class="flex gap-3">
-			<SearchBar />
-			<Hamburger />
-		</div>
 	</nav>
-</header>
-<style>
-	header {
-		margin: 0;
-		padding: 0 2em;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav a:hover{
-		color: #a3e635;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		color: #a3e635;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
+	<style>
+		header {
+			box-shadow: 0 2px 8px rgba(var(--black), 5%);
 		}
-	}
-</style>
+	</style>
+</header>
