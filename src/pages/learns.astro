@@ -1,38 +1,71 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import { cardplatforms } from "../consts";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-	<div class="flex items-center justify-between w-full max-sm:flex-col-reverse">
+	<div
+		class="flex items-center justify-between w-full max-sm:flex-col-reverse"
+	>
 		<div class="grid *:max-sm:text-center">
-			<div class="whitespace-nowrap text-lime-400 max-sm:text-[16px] px-3 py-2 rounded-full border border-lime-400 w-max max-sm:mx-auto block align-baseline leading-none">Hi Grandkids, I'm your Grandpa!</div>
-			<h1 class="text-[3.1rem] font-bold  max-sm:text-3xl leading-none pt-[2rem] pb-[1rem]">I'll teach you digital marketing best practices that are easy to implement in your work, <span class="text-lime-400">because Grandpa Knows Best!</span></h1>
-			<h3 class="text-2xl text-zinc-400 leading-none">If you want to learn digital marketing the right way, <span class="text-lime-400 underline">obey your grandpa</span>. I've been in the game for years and know what I'm talking about.</h3>
+			<div
+				class="whitespace-nowrap text-lime-400 max-sm:text-[16px] px-3 py-2 rounded-full border border-lime-400 w-max max-sm:mx-auto block align-baseline leading-none"
+			>
+				Hi Grandkids, I'm your Grandpa!
+			</div>
+			<h1
+				class="text-[3.1rem] font-bold max-sm:text-3xl leading-none pt-[2rem] pb-[1rem]"
+			>
+				I'll teach you digital marketing best practices that are easy to
+				implement in your work, <span class="text-lime-400"
+					>because Grandpa Knows Best!</span>
+			</h1>
+			<h3 class="text-2xl text-zinc-400 leading-none">
+				If you want to learn digital marketing the right way, <span
+					class="text-lime-400 underline">obey your grandpa</span
+				>. I've been in the game for years and know what I'm talking
+				about.
+			</h3>
 		</div>
-		<img class="max-w-[500px] max-sm:w-full" src="/grandpa2.webp" alt="avatar">
+		<img
+			class="max-w-[500px] max-sm:w-full"
+			src="/grandpa2.webp"
+			alt="avatar"
+		/>
 	</div>
 	<div class="pt-[9rem] cursor-pointer">
-		<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">Choose the platform you want to learn about</h1>
+		<h1 class="max-sm:text-3xl text-4xl pb-[2rem]">
+			Choose the platform you want to learn about
+		</h1>
 		<div class="grid grid-cols-2 gap-3 max-sm:grid-cols-1">
-			{cardplatforms.map((list) =>(
-				<div class="relative p-5 rounded-lg border border-zinc-700 hover:border-lime-400 hover:transition-all ease-linear duration-500">
-					<div class="absolute right-5 p-2 rounded-md bg-lime-950 ">
-						<img class="w-[25px] h-[25px] fill-lime-500" src={list.iconSVG} alt="icons"/>
+			{
+				cardplatforms.map((list) => (
+					<div class="relative p-5 rounded-lg border border-zinc-700 hover:border-lime-400 hover:transition-all ease-linear duration-500">
+						<div class="absolute right-5 p-2 rounded-md bg-lime-950 ">
+							<img
+								class="w-[25px] h-[25px] fill-lime-500"
+								src={list.iconSVG}
+								alt="icons"
+							/>
+						</div>
+						<div class="mt-[1rem]">
+							<h1 class="text-4xl text-lime-400">{list.title}</h1>
+							<h3 class="text-[1rem] max-sm:text-[14px] text-zinc-400 font-normal py-4">
+								{list.description}
+							</h3>
+						</div>
+						<div class="mt-6 ">
+							{list.categories.map((listTag) => (
+								<ul class="list-['✦'] list-outside pl-7 gap-5 ">
+									<li class="pl-5 hover:text-lime-400 w-max">
+										<a href={listTag.url}>{listTag.tag}</a>
+									</li>
+								</ul>
+							))}
+						</div>
 					</div>
-					<div class="mt-[1rem]">
-						<h1 class="text-4xl text-lime-400">{list.title}</h1>
-						<h3 class="text-[1rem] max-sm:text-[14px] text-zinc-400 font-normal py-4">{list.description}</h3>
-					</div>
-					<div class="mt-6 ">
-						{list.categories.map((listTag) =>(
-							<ul class="list-['✦'] list-outside pl-7 gap-5 ">
-								<li class="pl-5 hover:text-lime-400 w-max"><a href={listTag.url}>{listTag.tag}</a></li>
-							</ul>
-						))}
-					</div>
-				</div>
-			))}
+				))
+			}
 		</div>
 	</div>
 </BaseLayout>

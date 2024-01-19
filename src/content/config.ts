@@ -1,4 +1,5 @@
 import { defineCollection, reference, z } from "astro:content";
+import { rssSchema } from "@astrojs/rss";
 const FrontmatterSchema = z.object({
   estReadingTime: z.any(),
 });
@@ -19,12 +20,16 @@ const blog = defineCollection({
     tags: z.array(z.string()),
     keyword: z.array(z.string()),
     frontmatter: FrontmatterSchema.optional(),
-    headings: z.array(z.object({
-      text: z.string(),
-      depth: z.number(),
-      slug: z.string().optional()
-    })).optional(),
-    subheadings: z.string().optional()
+    headings: z
+      .array(
+        z.object({
+          text: z.string(),
+          depth: z.number(),
+          slug: z.string().optional(),
+        }),
+      )
+      .optional(),
+    subheadings: z.string().optional(),
   }),
 });
 

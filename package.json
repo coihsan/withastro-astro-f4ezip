@@ -23,6 +23,7 @@
     "astro": "^4.0.7",
     "astro-breadcrumbs": "^1.8.1",
     "framer-motion": "^10.16.16",
+    "markdown-it": "^14.0.0",
     "mdast-util-to-string": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
