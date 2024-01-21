@@ -11,19 +11,6 @@ tags:
 category: "Google Ads"
 keyword: 
     - "Belajar Google"
-headings:
-  - text: Introduction
-    depth: 1
-    slug: whyai
-  - text: Key Concepts
-    depth: 2
-    slug: whyai
-  - text: Example Usage
-    depth: 2
-    slug: whyai
-  - text: Conclusion
-    depth: 1
-    slug: whyai
 ---
 Move over, spreadsheets and late nights! Artificial intelligence (AI) is fast becoming the secret sauce of Google Ads Search, transforming the way we create, optimize, and manage campaigns. But how do you harness this powerful tool to elevate your search game and conquer the ever-evolving digital landscape? Buckle up, because we're diving deep into the world of AI-powered Google Ads Search, exploring its capabilities and equipping you with the knowledge to unlock its full potential.
 

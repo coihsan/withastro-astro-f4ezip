@@ -11,19 +11,6 @@ tags:
 category: "Google Ads"
 keyword: 
     - "Belajar Google"
-headings:
-  - text: Introduction
-    depth: 1
-    slug: whyai
-  - text: Key Concepts
-    depth: 2
-    slug: whyai
-  - text: Example Usage
-    depth: 2
-    slug: whyai
-  - text: Conclusion
-    depth: 1
-    slug: whyai
 ---
 
 While Google may not have officially declared a major core update in December 2023, the search engine landscape has definitely seen some interesting shifts and fluctuations throughout the month. This has left many website owners and SEO professionals scratching their heads, wondering what exactly is going on and how to adapt their strategies.

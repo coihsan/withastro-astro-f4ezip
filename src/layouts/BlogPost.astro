@@ -4,12 +4,12 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
-import TableOfContents from "../components/TableOfContents.astro";
+// import TableOfContents from "../components/TableOfContents.astro";
 import { Breadcrumbs } from "astro-breadcrumbs";
-import 'astro-breadcrumbs/breadcrumbs.css';
+import "astro-breadcrumbs/breadcrumbs.css";
 type Props = CollectionEntry<"blog">["data"];
-const { title, description, pubDate, updatedDate, heroImage, frontmatter, headings} =
-	Astro.props 
+const { title, description, pubDate, updatedDate, heroImage, frontmatter } =
+	Astro.props;
 ---
 
 <html lang="en">
@@ -21,9 +21,9 @@ const { title, description, pubDate, updatedDate, heroImage, frontmatter, headin
 		<Header />
 		<main>
 			<article class="mt-12">
-				
-				<div class="relative flex items-center justify-center flex-wrap bg-teal-800 h-[400px] rounded-lg p-5">
-					
+				<div
+					class="relative flex items-center justify-center flex-wrap bg-teal-800 h-[400px] rounded-lg p-5"
+				>
 					<!-- {
 						heroImage && (
 							<img
@@ -36,7 +36,7 @@ const { title, description, pubDate, updatedDate, heroImage, frontmatter, headin
 						)
 					} -->
 					<div class="">
-						<h1 class=" text-5xl">{title}</h1>
+						<h1 class="text-5xl">{title}</h1>
 						<div class="text-zinc-400">
 							<FormattedDate date={pubDate} />
 							{
@@ -61,20 +61,24 @@ const { title, description, pubDate, updatedDate, heroImage, frontmatter, headin
 									stroke-width="2"
 									stroke-linecap="round"
 									stroke-linejoin="round"
-									><polyline points="9 18 15 12 9 6"></polyline>
-								  </svg>
+									><polyline points="9 18 15 12 9 6"
+									></polyline>
+								</svg>
 							</Breadcrumbs>
 						</div>
 					</div>
 				</div>
 
 				<div class="pt-12 list-disc flex max-sm:flex-col">
-					<div class="min-w-[300px] border border-zinc-500 rounded-lg p-5 h-max flex flex-col">
-						<div class="bg-zinc-800 rounded-lg w-full flex justify-center items-center p-3 m-0 leading-none">
-							<span class="uppercase text-base max-sm:text-sm">In this article</span>
-						</div>
-						<div>
-							<TableOfContents headings={headings} />
+					<div
+						class="min-w-[300px] border border-zinc-500 rounded-lg p-5 h-max flex flex-col"
+					>
+						<div
+							class="bg-zinc-800 rounded-lg w-full flex justify-center items-center p-3 m-0 leading-none"
+						>
+							<span class="uppercase text-base max-sm:text-sm"
+								>In this article</span
+							>
 						</div>
 					</div>
 					<div class="ml-5 max-sm:ml-0 max-sm:mt-5 prose">

@@ -1,30 +1,26 @@
 ---
-import TableOfContentsHeading from "../components/TableOfContentsHeading.astro";
-const { frontmatter, headings, subheadings } = Astro.props;
+const { headings } = Astro.props;
 const toc = buildToc(headings);
 
-function buildToc(headings: Array<{ text: string, depth: number, subheadings?: string[] }>)  {
+function buildToc(headings) {
   const toc = [];
   const parentHeadings = new Map();
-
   headings.forEach((h) => {
-    const heading = { ...h, subheadings: [] as any[] };
+    const heading = { ...h, subheadings: [] };
     parentHeadings.set(heading.depth, heading);
-
-    if (heading.depth === 2) {
+    if (heading.depth === 1) {
       toc.push(heading);
     } else {
-      parentHeadings.get(heading.depth - 1)?.subheadings.push(heading);
+      parentHeadings.get(heading.depth - 1).subheadings.push(heading);
     }
   });
-
   return toc;
 }
-const isActive = "text-zinc-500"
+const isActive = "text-zinc-500";
 ---
 
 <nav class="toc">
-  <ul class="*:text-zinc-400 ml-5 text-base max-sm:text-sm">
+  <ul>
     {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
   </ul>
 </nav>

@@ -20,16 +20,6 @@ const blog = defineCollection({
     tags: z.array(z.string()),
     keyword: z.array(z.string()),
     frontmatter: FrontmatterSchema.optional(),
-    headings: z
-      .array(
-        z.object({
-          text: z.string(),
-          depth: z.number(),
-          slug: z.string().optional(),
-        }),
-      )
-      .optional(),
-    subheadings: z.string().optional(),
     canonicalURL: z.string().url().optional(),
   }),
 });

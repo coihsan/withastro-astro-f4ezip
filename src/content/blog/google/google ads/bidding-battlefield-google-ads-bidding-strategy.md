@@ -11,19 +11,6 @@ tags:
 category: "Google Ads"
 keyword: 
     - "Belajar Google"
-headings:
-  - text: Introduction
-    depth: 1
-    slug: whyai
-  - text: Key Concepts
-    depth: 2
-    slug: whyai
-  - text: Example Usage
-    depth: 2
-    slug: whyai
-  - text: Conclusion
-    depth: 1
-    slug: whyai
 ---
 
 # Bidding Like a Boss: Demystifying Google Ads Bidding Strategies

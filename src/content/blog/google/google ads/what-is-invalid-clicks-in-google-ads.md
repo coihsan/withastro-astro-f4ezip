@@ -10,19 +10,6 @@ tags:
 category: "Google Ads"
 keyword: 
     - "Belajar Google"
-headings:
-  - text: Introduction
-    depth: 1
-    slug: whyai
-  - text: Key Concepts
-    depth: 2
-    slug: whyai
-  - text: Example Usage
-    depth: 2
-    slug: whyai
-  - text: Conclusion
-    depth: 1
-    slug: whyai
 ---
 
 Invalid clicks in Google Ads are clicks on your ads that aren't the result of genuine user interest. They can artificially inflate your costs and negatively impact your campaign performance.

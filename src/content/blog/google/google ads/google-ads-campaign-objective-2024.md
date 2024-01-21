@@ -11,19 +11,6 @@ tags:
 category: "Google Ads"
 keyword: 
     - "Belajar Google"
-headings:
-  - text: Introduction
-    depth: 1
-    slug: whyai
-  - text: Key Concepts
-    depth: 2
-    slug: whyai
-  - text: Example Usage
-    depth: 2
-    slug: whyai
-  - text: Conclusion
-    depth: 1
-    slug: whyai
 ---
 
 The Google Ads campaign objective landscape has undergone a seismic shift, leaving some marketers feeling lost in a labyrinth of new options. But fear not, intrepid adventurers! This comprehensive guide will be your trusty map, helping you navigate the revamped terrain and select the objective that propels your campaigns to triumphant heights.

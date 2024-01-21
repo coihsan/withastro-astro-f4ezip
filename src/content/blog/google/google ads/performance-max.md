@@ -11,19 +11,6 @@ tags:
 category: "Google Ads"
 keyword: 
     - "Belajar Google"
-headings:
-  - text: Introduction
-    depth: 1
-    slug: whyai
-  - text: Key Concepts
-    depth: 2
-    slug: whyai
-  - text: Example Usage
-    depth: 2
-    slug: whyai
-  - text: Conclusion
-    depth: 1
-    slug: whyai
 ---
 
 Remember the days of juggling multiple Google Ads campaigns for search, display, YouTube, and more? Enter Performance Max, the ambitious all-in-one campaign type launched in 2021 that promises to simplify campaign management and maximize results across the entire Google Ads ecosystem.

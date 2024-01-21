@@ -11,19 +11,7 @@ tags:
 category: "Google Ads"
 keyword: 
     - "Belajar Google"
-headings:
-  - text: Introduction
-    depth: 1
-    slug: whyai
-  - text: Key Concepts
-    depth: 2
-    slug: whyai
-  - text: Example Usage
-    depth: 2
-    slug: whyai
-  - text: Conclusion
-    depth: 1
-    slug: whyai
+
 ---
 
 Broad match in Google Ads – it's the wild card, the mystery box, the potential party animal of keywords. But is it a friend or foe for your campaigns? Let's break it down, ditch the jargon, and get real about broad match's potential and pitfalls.
