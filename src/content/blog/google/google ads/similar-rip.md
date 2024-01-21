@@ -1,7 +1,7 @@
 ---
 title: 'RIP Similar Audiences! Why Google Pulled the Plug and What You Can Do Now'
 description: 'Google has pulled the plug on this once-powerful tool. But why did they do it, and what does it mean for your ad campaigns?'
-pubDate: 'Jul 08 2022'
+pubDate: 'Jul 08 2023'
 heroImage: 
     src: './images/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'
@@ -9,7 +9,7 @@ tags:
     - "Google Ads"
 category: "Google Ads"
 keyword: 
-    - "Belajar Google"
+    - "Learn Google Ads"
 ---
 
 Remember Similar Audiences in Google Ads? Those magical segments that expanded your reach to users with eerily similar traits to your existing customers? Well, as of August 2023, they've officially joined the digital marketing graveyard. But why did Google axe this popular tool, and what does it mean for your ad campaigns? Buckle up, folks, because we're diving deep into the demise of Similar Audiences and charting your course forward.
