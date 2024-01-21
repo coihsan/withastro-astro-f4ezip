@@ -1,5 +1,6 @@
 ---
 import Navigation from "./Navigation.astro";
+import Hamburger from "./UI/Hamburger.astro";
 import SearchBar from "./UI/SearchBar.astro";
 ---
 
@@ -21,14 +22,8 @@ import SearchBar from "./UI/SearchBar.astro";
 			<Navigation />
 		</div>
 		<div class="flex items-center">
-			<div class="flex gap-3">
-				<SearchBar />
-			</div>
+			<SearchBar />
+			<Hamburger />
 		</div>
 	</nav>
-	<style>
-		header {
-			box-shadow: 0 2px 8px rgba(var(--black), 5%);
-		}
-	</style>
 </header>
