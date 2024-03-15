@@ -2,6 +2,7 @@
 title: 'What is Invalid Clicks in Google Ads?'
 description: 'Clicks on ads that aren’t a result of genuine user interest, including intentionally fraudulent traffic and accidental or duplicate clicks.'
 pubDate: 'Dec 08 2022'
+updatedDate: 'Dec 08 2022'
 heroImage: 
     src: './images/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'

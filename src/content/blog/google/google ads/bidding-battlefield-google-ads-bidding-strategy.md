@@ -2,6 +2,7 @@
 title: 'Bidding Battlefield: A Guide to Google Ads Bidding Strategies'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2023'
+updatedDate: 'Dec 08 2023'
 heroImage: 
     src: './images/blog-placeholder-3.jpg'
     alt: 'Thumbnail of Astro rays.'

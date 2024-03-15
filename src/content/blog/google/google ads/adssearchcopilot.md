@@ -2,6 +2,7 @@
 title: 'Your New Google Ads Search Copilot - Embrace the Power and Navigate the Future'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 08 2023'
+updatedDate: 'Dec 08 2023'
 heroImage: 
     src: './images/blog-placeholder-2.jpg'
     alt: 'Thumbnail of Astro rays.'
