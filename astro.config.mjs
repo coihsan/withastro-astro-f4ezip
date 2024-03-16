@@ -7,11 +7,32 @@ import preact from '@astrojs/preact';
 import react from "@astrojs/react";
 import { remarkReadingTime } from "./src/lib/remark-reading-time.mjs";
 import markdownConfig from './src/lib/markdown.config'
-import astroRemark from "@astrojs/markdown-remark";
+import AstroPWA from '@vite-pwa/astro';
+import webmanifest from 'astro-webmanifest';
 // https://astro.build/config
 export default defineConfig({
   site: "https://example.com",
-  integrations: [mdx(), sitemap(), tailwind(), react(), preact()],
+  integrations: [
+    mdx(), 
+    sitemap(), 
+    tailwind(), 
+    react(), 
+    preact(), 
+    AstroPWA(),
+    webmanifest({
+      name: 'YourGrandpa Blog',
+      config: {
+        outfile: 'site.webmanifest',
+      },
+      // icon: 'src/images/your-icon.svg',
+      short_name: 'YourGrandpa App',
+      description: 'YourGrandpa documentation',
+      start_url: '/',
+      theme_color: '#3367D6',
+      background_color: '#000000',
+      display: 'standalone',
+    }),
+  ],
   build: {
     rollupOptions: {
       external: ['sanitize-html'],

@@ -17,6 +17,7 @@
     "@astrojs/rss": "^4.0.1",
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/tailwind": "^5.0.4",
+    "@astropub/icons": "^0.2.0",
     "@fontsource/ibm-plex-mono": "^5.0.8",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
@@ -38,6 +39,8 @@
   "devDependencies": {
     "@types/jest": "^29.5.11",
     "@types/jquery": "^3.5.29",
+    "@vite-pwa/astro": "^0.3.0",
+    "astro-webmanifest": "^1.0.0",
     "sass": "^1.69.7"
   }
 }
