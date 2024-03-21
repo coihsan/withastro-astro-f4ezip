@@ -3,9 +3,11 @@
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "start",
-			"problemMatcher": [],
-			"label": "npm: start",
+			"script": "dev",
+			"problemMatcher": [
+				"$eslint-stylish"
+			],
+			"label": "npm: dev",
 			"detail": "astro dev"
 		}
 	]

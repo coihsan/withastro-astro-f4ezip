@@ -2,10 +2,8 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import { SITE_TITLE, SITE_DESCRIPTION , cardplatforms} from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION} from '../consts';
 import { ViewTransitions } from "astro:transitions";
-import { pwaInfo } from 'virtual:pwa-info';
-import ReloadPrompt from '../components/ReloadPrompt.astro';
 ---
 
 <!DOCTYPE html>
@@ -14,7 +12,6 @@ import ReloadPrompt from '../components/ReloadPrompt.astro';
     <head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<ViewTransitions />
-		{ pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
 	</head>
 </head>
 <body>
@@ -25,7 +22,6 @@ import ReloadPrompt from '../components/ReloadPrompt.astro';
 		</div>
 	</main>
 	<Footer />
-	<ReloadPrompt />
 	<!-- <script>
 		document.querySelector('.hamburger').addEventListener('click', () => {
 		  document.querySelector('.nav-links').classList.toggle('expanded');

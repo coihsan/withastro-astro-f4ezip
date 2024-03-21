@@ -1,5 +1,4 @@
 ---
-import Greeting from "../../components/Greeting";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import { Image } from "astro:assets";
@@ -11,15 +10,6 @@ const posts = (await getCollection("blog")).sort(
 
 <BaseLayout>
 	<div class="mb-12 flex flex-col items-center">
-		<Greeting
-			client:load
-			messages={[
-				"Listen Grandkid",
-				"Liste Grandteen",
-				"Listen Grandkiddo",
-			]}
-			text={" Here i own"}
-		/>
 		<p>
 			I have many articles for you read anytime, and i'm always update
 			this my own

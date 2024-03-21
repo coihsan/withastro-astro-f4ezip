@@ -1,5 +1,4 @@
 ---
-import Greeting from "../components/Greeting";
 import { cardplatforms } from "../consts";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
@@ -9,16 +8,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 		class="flex items-center justify-between w-full max-sm:flex-col-reverse"
 	>
 		<div class="flex flex-col max-sm:*:text-center">
-			<Greeting
-				client:load
-				messages={[
-					"Hi Grandkid",
-					"Hello Grandteen",
-					"Howdy Grandkiddo",
-					"Hey there",
-				]}
-				text={" Thank you for visiting!"}
-			/>
 			<h1
 				class="atkinso700 text-[3.1rem] font-bold max-sm:text-3xl leading-none pt-[1rem]"
 			>

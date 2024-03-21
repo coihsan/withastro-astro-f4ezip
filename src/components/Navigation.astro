@@ -3,7 +3,7 @@ import HeaderLink from "./HeaderLink.astro";
  
 ---
 
-<nav class="flex items-center gap-4">
+<nav class="flex flex-col items-center gap-4 md:flex-row sm:flex-row">
     <HeaderLink href="/">Home</HeaderLink>
     <HeaderLink href="/learns" >Learn</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
@@ -25,7 +25,7 @@ import HeaderLink from "./HeaderLink.astro";
 		text-decoration: none;
 		color: #a3e635;
 	}
-    @media (max-width: 923px){
+    /* @media (max-width: 923px){
         nav{
             position: fixed;
             flex-direction: column;
@@ -39,5 +39,5 @@ import HeaderLink from "./HeaderLink.astro";
             background: black;
             z-index: 1;
         }
-    }
+    } */
 </style>
