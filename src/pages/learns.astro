@@ -1,6 +1,8 @@
 ---
 import { cardplatforms } from "../consts";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/UI/Greeting.astro"
+
 ---
 
 <BaseLayout>
@@ -8,11 +10,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 		class="flex items-center justify-between w-full max-sm:flex-col-reverse"
 	>
 		<div class="grid *:max-sm:text-center">
-			<div
-				class="whitespace-nowrap text-lime-400 max-sm:text-[16px] px-3 py-2 rounded-full border border-lime-400 w-max max-sm:mx-auto block align-baseline leading-none"
-			>
-				Hi Grandkids, I'm your Grandpa!
-			</div>
+			<Greeting text="Hi Grandkids, I'm your Grandpa!" />
 			<h1
 				class="text-[3.1rem] font-bold max-sm:text-3xl leading-none pt-[2rem] pb-[1rem]"
 			>

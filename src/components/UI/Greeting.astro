@@ -1,0 +1,10 @@
+---
+interface Props{
+    text: string;
+}
+const {text} = Astro.props
+---
+
+<div class="whitespace-nowrap text-lime-400 max-sm:text-[16px] rounded-full bg-gradient-to-r from-lime-500 to-yellow-500 p-px w-max max-sm:mx-auto block align-baseline leading-none overflow-hidden">
+	<div class="px-3 py-2 rounded-full bg-onyx-950">{text}</div>
+</div>
