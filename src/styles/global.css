@@ -29,8 +29,8 @@
 
 body {
   font-family: "Manrope Variable", sans-serif;
-  background-color: #000000;
-  color: #e4e4e7;
+  background-color: #060913;
+  color: #f2f6fa;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -41,8 +41,8 @@ body {
   line-height: 1.7;
 }
 main {
-  width: 1280px;
-  max-width: calc(100% - 1em);
+  max-width: 1280px;
+  /* max-width: calc(100% - 1em); */
   margin: auto;
   padding: 3em 1em;
 }

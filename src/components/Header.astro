@@ -4,9 +4,9 @@ import SearchBar from "./UI/SearchBar.astro";
 ---
 
 <header
-	class="fixed top-3 w-full z-50 px-9 flex items-center"
+	class="fixed top-3 w-full z-50 px-9 flex items-center shadow-2xl"
 >
-	<nav class="w-full flex items-center justify-between bg-onyx-900 px-9 py-5 rounded-full">
+	<nav class="w-full flex items-center justify-between bg-onyx-900 px-9 py-5 rounded-full  border border-onyx-100/5">
 		<div class="flex items-center">
 			<a class="flex items-center mr-9 max-sm:mr-0" href="/">
 				<img
@@ -22,7 +22,7 @@ import SearchBar from "./UI/SearchBar.astro";
 		</div>
 		<div class="flex items-center">
 			<SearchBar />
-			<button>
+			<button class="block md::hidden lg:hidden xl::hidden">
 				<svg
             class="h-[1.25rem] w-[1.25rem] flex-shrink-0 hs-collapse-open:hidden"
             width="24"
