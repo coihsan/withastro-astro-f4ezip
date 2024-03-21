@@ -7,10 +7,17 @@ import { remarkReadingTime } from "./src/lib/remark-reading-time.mjs";
 import markdownConfig from './src/lib/markdown.config';
 import vercel from "@astrojs/vercel/serverless";
 
+import compressor from "astro-compressor";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://yourgrandpa.vercel.app/",
-  integrations: [mdx(), sitemap(), tailwind()],
+  integrations: [
+    mdx(), 
+    sitemap(), 
+    tailwind(), 
+    compressor({ gzip: true, brotli: false })
+  ],
   build: {
     rollupOptions: {
       external: ['sanitize-html']
