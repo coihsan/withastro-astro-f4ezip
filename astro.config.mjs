@@ -6,7 +6,7 @@ import astroRemark from "@astrojs/markdown-remark";
 import { remarkReadingTime } from "./src/lib/remark-reading-time.mjs";
 import markdownConfig from './src/lib/markdown.config';
 import vercel from "@astrojs/vercel/serverless";
-
+import preact from '@astrojs/preact';
 import compressor from "astro-compressor";
 
 // https://astro.build/config
@@ -16,7 +16,8 @@ export default defineConfig({
     mdx(), 
     sitemap(), 
     tailwind(), 
-    compressor({ gzip: true, brotli: false })
+    compressor({ gzip: true, brotli: false }),
+    preact(),
   ],
   build: {
     rollupOptions: {
