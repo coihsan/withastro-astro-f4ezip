@@ -1,11 +1,21 @@
 ---
-interface Props{
-    className: string;
-}
-const {className} = Astro.props
+
+const {customPaddings} = Astro.props
 ---
-<section class={`${className} w-full max-w-screen-xl`}>
-    <div>
+<section class={`${customPaddings} relative py-10 lg:py-16 xl:py-20`}>
         <slot />
-    </div>
+
+      <div class="hidden absolute top-0 left-5 w-px h-full bg-stroke-1 pointer-events-none md:block lg:left-7.5 xl:left-10" />
+      <div class="hidden absolute top-0 right-5 w-px h-full bg-stroke-1 pointer-events-none md:block lg:right-7.5 xl:right-10" />
+
+      <!-- {crosses && (
+        <>
+          <div
+            class={`hidden absolute top-0 left-7.5 right-7.5 h-px bg-stroke-1 ${
+              crossesOffset && crossesOffset
+            } pointer-events-none lg:block xl:left-10 right-10`}
+          />
+          <SectionSvg crossesOffset={crossesOffset} />
+        </>
+      )} -->
 </section>

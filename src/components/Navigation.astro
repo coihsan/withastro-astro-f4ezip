@@ -3,7 +3,7 @@ import HeaderLink from "./HeaderLink.astro";
  
 ---
 
-<nav class="flex flex-col items-center gap-8 md:flex-row sm:flex-row">
+<nav class="nav-links">
     <HeaderLink href="/">Home</HeaderLink>
     <HeaderLink href="/learns" >Learn</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
@@ -12,32 +12,3 @@ import HeaderLink from "./HeaderLink.astro";
     <HeaderLink href="/buymeacoffee">Buy me a coffee!</HeaderLink>
 </nav>
 
-<style>
-	nav a:hover {
-		color: #a3e635;
-	}
-	nav a {
-		text-decoration: none;
-        font-size: 1rem;
-        line-height: 0;
-	}
-	nav a.active {
-		text-decoration: none;
-		color: #a3e635;
-	}
-    /* @media (max-width: 923px){
-        nav{
-            position: fixed;
-            flex-direction: column;
-            align-items: start;
-            gap: 1rem;
-            top: 70px;
-            left: 0;
-            width: 100%;
-            head: 100vh;
-            padding: 2rem;
-            background: black;
-            z-index: 1;
-        }
-    } */
-</style>

@@ -91,3 +91,77 @@ h6 {
   font-family: "Atkinson", sans-serif;
   font-weight: 700;
 }
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ff9776;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #ff9776;
+}
+
+.expanded {
+  display: unset;
+}
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger .line {
+display: block;
+width: 29px;
+height: 2px;
+margin-bottom: 5px;
+background-color: #ffffff;
+border-radius: 20px;
+}
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+}
+@media screen and (min-width: 636px) {
+.nav-links {
+  margin-left: 5em;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: auto;
+  background: none;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+.hamburger {
+  display: none;
+}
+}
